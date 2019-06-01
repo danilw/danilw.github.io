@@ -452,15 +452,15 @@
          sc*=45.;
          moonXY=vec2(0.);
          vec4 moonColor = vec4(0.0, 0.0, 0.0, 1.0);
-         float dMoon = sin(2.00 / (distance(moonXY, sc) + 1.0)) * 01.0;
-         moonColor.r = dMoon * 01.7;
-         moonColor.g = dMoon * 01.7;
-         moonColor.b = dMoon*01.1;
+         float dMoon = sin(2.00 / (distance(moonXY, sc) + 1.0)) * 1.0;
+         moonColor.r = dMoon * 1.7;
+         moonColor.g = dMoon * 1.7;
+         moonColor.b = dMoon * 1.1;
          return moonColor;
          }
          vec4 pos1=vec4(0.205,0.,0.,0.);
          vec4 pos2=vec4(0.1,1.0,-2.48,0.);
-         vec4 pos3=vec4(01.862,0.75,2.45,0.);
+         vec4 pos3=vec4(1.862,0.75,2.45,0.);
          void mainImage( out vec4 fragColor, in vec2 fragCoord )
          {
          vec2 sc = 2.0 * fragCoord.xy / iResolution.xy - 1.0;
