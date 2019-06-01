@@ -66,8 +66,6 @@
          }
          .tabs .panel {
          position: absolute;
-         left: -9999;
-         bottom: -9999;
          opacity: 0;
          }
          #home:checked ~ .panels #home-panel,
@@ -517,7 +515,7 @@
       <div id="container">
          <div id="header">
             <div class="headtitle">Hello</div>
-            <canvas id = "gl" width = "683" height = "250" position ="relative" style="visibility:hidden;"></canvas>
+            <canvas id = "gl" width = "683" height = "250" style="visibility:hidden;"></canvas>
          </div>
          <script type = "text/javascript">
             "use strict";
@@ -648,7 +646,7 @@
             </div>
             <div class="panels">
                <div id="home-panel" class="panel active">
-                  <div id="content">
+                  <div>
                      <div id="insidecontent">
                         <br/>
                         <h1>Welcome</h1>
@@ -677,7 +675,7 @@
                   </div>
                </div>
                <div id="lista-panel" class="panel">
-                  <div id="content">
+                  <div>
                      <div id="insidecontent">
                         <br/>
                         <h1>GLSL games/demos</h1>
