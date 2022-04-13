@@ -58,7 +58,6 @@ For my offline shader development---text editor with shader-viewer/render is eno
 
 [Minimal single shader web template](https://github.com/danilw/GLSL-howto/blob/master/minimal_webgl_glsl/mini_glsl_viewer.html) ---100 lines of code single HTML file include shaders. [Second minimal example](https://github.com/danilw/GLSL-howto/tree/master/minimal_webgl_glsl/ext_glsl_texture)---with shaders in files and textures loading.
 
-**My other Web templates** using WASM, I use these templates when Godot web-template is overkill for the project.
-Shader Viewer *Shadertoy-like logic* with buffers support [live example](https://danilw.github.io/GLSL-howto/dummy_nanogui_min/glsl_v2.html) and [source code in zip](https://github.com/danilw/GLSL-howto/tree/master/dummy_nanogui_min_wasm).
 Particle shader with transform feedback, support *vertexshaderart-like logic*---[live example](https://danilw.github.io/GLSL-howto/transorm_feedback_template/web_test_adv/feedback_advanced.html) and [source code in zip](https://github.com/danilw/GLSL-howto/tree/gh-pages/transorm_feedback_template).
+
 *For more complex projects* I always use the Godot Web-export template.
