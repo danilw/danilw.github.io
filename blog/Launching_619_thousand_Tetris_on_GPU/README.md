@@ -1,16 +1,16 @@
 * * * * *
 
-### Launching 619 thousand Tetris on GPU, their rendering, and a simple bot
+## Launching 619 thousand Tetris on GPU, their rendering, and a simple bot
 
 [![glslat](1.png)](https://youtu.be/rcgpwVLydLw)
 
-GLSL Auto Tetris
+GLSL Auto Tetris [Youtube link](https://youtu.be/rcgpwVLydLw)
 
 #### **The idea:**
 
 Make the **maximum number of simultaneously launched Tetrises** for one shader (one Framebuffer texture).
 
-#### Download or Launch links:
+### Download or Launch links:
 
 -   Web-version *Shadertoy link* [**GLSL Auto Tetris**](https://www.shadertoy.com/view/3dlSzs).
 -   **Binary version** only *WIndows* and *Linux*.\
@@ -42,8 +42,8 @@ Also made a simple bot for auto-play.
     **If you download or trying web-version be careful using more than *100k* bots**. (more than 100k can be considered as stress-test for GPU)
 -   In this project, **I use only 24 bits from 32 bits available in float**.\
     I use int `0xFFFFFF` without `uintBitsToFloat` function.\
-    **Correct data(and bits) saving method --- look at my previous blog post** [***Games in the GPU shaders***](https://arugl.medium.com/games-in-the-gpu-shaders-a912414b1894)**.\
-    **Changing saving logic from 24 bits to 32 bits will allow to pack Tetris board in just 2 pixels instead of 3.\
+    **Correct data(and bits) saving method --- look at my previous blog post** [***Games in the GPU shaders***](https://arugl.medium.com/games-in-the-gpu-shaders-a912414b1894).\
+    Changing saving logic from 24 bits to 32 bits will allow to pack Tetris board in just 2 pixels instead of 3.\
     But most of the performance slowdown comes from "logic pixel" and executing more "logic pixels" per Framebuffer size just leads to even more slowdown. (I did not change logic because it will result just even more slow performance)
 
 * * * * *
@@ -71,7 +71,7 @@ There are **two unused floats left in the third pixel *pixel3.zw****,* they stor
     --- ***c*** ID of the current block
 -   **w** store same `[a,b,c]`, but also the sign (positive or negative) of the total float is the flag of the ***end of the game in the current table*** (so as not to waste resources if the field is filled up)\
     --- ***a*** action, no action (0), left (1), right (2) and so on, full code in Common (source code line 20), ***actions*** have two states, *left_check* and if it is possible to move to the left, then the action is set to *left_move*.\
-    --- `**[b,c]**` *0xffff*(16 bits) points of the current table, the number of lines that burned.
+    --- `[b,c]` *0xffff*(16 bits) points of the current table, the number of lines that burned.
 
 There are ***20 bits*** left unused in the second float of the third pixel.
 
@@ -128,26 +128,27 @@ I have not been able to run *good logic* with many loops to check free spaces an
 All the logic is in the ***AI_pos_gen*** function in the source code *Buffer A* (line 394).
 
 #### Pseudocode:
-
-loop ( 4 rotation of current block )\
-{\
-    loop ( by width of table is 10 )\
-    {\
-        IF ( block_can_be_moved_here )\
-        {\
-            IF ( current_block_height and position\
-                 less than the previous one )\
-                THEN we remember best block_ID and best_POS\
-        }\
-    }\
+```
+loop ( 4 rotation of current block )
+{
+    loop ( by width of table is 10 )
+    {
+        IF ( block_can_be_moved_here )
+        {
+            IF ( current_block_height and position
+                 less than the previous one )
+                THEN we remember best block_ID and best_POS
+        }
+    }
 }
 
-function block_can_be_moved_here\
-{\
-    check in the loop(size of block)\
-    that all elements of the map(tetris board)\
-    are 0 where the elements of block are 1\
+function block_can_be_moved_here
+{
+    check in the loop(size of block)
+    that all elements of the map(tetris board)
+    are 0 where the elements of block are 1
 }
+```
 
 It three loops that are trivial --- they put the block so that the resulting height is minimal.
 
@@ -201,8 +202,8 @@ And keyboard arrows to move blocks in player mode.
 
 #### To launch Web version on the Shadertoy:
 
--   if you on Windows --- launch (*Win+R hotkey*) Chrome using this command*\
-    *`chrome.exe --use-angle=gl`
+-   if you on Windows --- launch (*Win+R hotkey*) Chrome using this command\
+    `chrome.exe --use-angle=gl`
 -   open this [**GLSL Auto Tetris**](https://www.shadertoy.com/view/3dlSzs) link
 -   in the Shadertoy editor select *Common tab* and delete on line 4\
     *#define no_AI*
