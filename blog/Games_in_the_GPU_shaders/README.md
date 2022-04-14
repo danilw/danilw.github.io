@@ -291,6 +291,8 @@ WebGL:
 OpenGL/Vulkan:
 --------------
 
+Also look at my [GPU-my-list-of-bugs](https://github.com/danilw/GPU-my-list-of-bugs).
+
 Hardware limitations --- depends on GPU:
 
 1.  *Loop in the loop in another loop* with complex logic on every level.\
@@ -317,18 +319,20 @@ From my shader-game Sgame.
 My games in the shaders:
 ------------------------
 
-1.  [Sgame (youtube video link)](https://youtu.be/lVCIEaFEMO4) --- my first try of creating a game in the shader, only physics calculated on the CPU.\
+0.  [**Sgame (youtube video link)**](https://youtu.be/lVCIEaFEMO4) --- my first try of creating a game in the shader, only physics calculated on the CPU.\
     [Launch link](https://danilw.github.io/GLSL-howto/sgame_ntwgl/sgame.html). *Warning**:* clicking this link may crash your browser.\
     Shader [source code](https://github.com/danilw/cputests/blob/master/glsl/myfs.glsl).
-2.  [Getting Over...GLSL?](https://danilw.itch.io/goglsl) ---my try using 2D SDF physics in the GPU.\
+1.  [**Getting Over...GLSL?**](https://danilw.itch.io/goglsl) ---my try using 2D SDF physics in the GPU.\
     Shader that used for GPU physics [source link](https://www.shadertoy.com/view/XtlBWl).\
     My other shaders [source code](https://github.com/danilw/getting-over-glsl/tree/master/shaders).
-3.  [Card game in the single shader ](https://www.shadertoy.com/view/wdlGz8)--- large linear logic TCG-like game concept with minimal AI-bot. To launch on Shadertoy remove *#define NOCOMPILE* from Common and press Compile(run).\
+2.  [**Card game in the single shader**](https://www.shadertoy.com/view/wdlGz8) --- large linear logic TCG-like game concept with minimal AI-bot. To launch on Shadertoy remove *#define NOCOMPILE* from Common and press Compile(run).\
     [Youtube video of my Card game](https://youtu.be/xMTVUL1_10M).\
     Alternative [75Kb exe download](https://www.pouet.net/prod.php?which=84806), Windows only.
-4.  An [unfinished game (youtube video link)](https://youtu.be/5Wzj-GNAo6c) where I tried to use *blend* to draw many small elements. Download links in the youtube video description.\
+3. [**GLSL Auto Tetris**](https://medium.com/geekculture/launching-619-thousand-tetris-on-gpu-their-rendering-and-a-simple-bot-f2449b607db1) --- blog post link, read description there.
+4.  An [**unfinished game** (youtube video link)](https://youtu.be/5Wzj-GNAo6c) where I tried to use *blend* to draw many small elements. Download links in the youtube video description.\
     Shader [source code](https://github.com/danilw/vulkan-shader-launcher/blob/master/example_game/shaders/src/main_image.glsl).
-5.  [We need more likes, playable](https://www.shadertoy.com/view/3syXDD) --- very minimal clicker.
+5.  [**We need more likes, playable**](https://www.shadertoy.com/view/3syXDD) --- very minimal clicker.
+6.  [**Game for Cactus Jam**](https://www.shadertoy.com/view/NlXXW2) --- downlload links listed on Shadertoy page.
 
 Other games on the Shadertoy:
 -----------------------------
@@ -338,7 +342,7 @@ List of 151 [Playable games in Shadertoy!](https://shadertoyunofficial.wordpre
 Export template:
 ================
 
-I use only my own [Vulkan-Shadertoy-Launcher](https://github.com/danilw/vulkan-shadertoy-launcher/) (source code there).\
+I use only my own [**Vulkan-Shadertoy-Launcher**](https://github.com/danilw/vulkan-shadertoy-launcher/) (source code there).\
 I do not recommend OpenGL applications because way too many bugs in OpenGL.
 
 For other templates for exporting look at my previous blog [Into Shadertoy and Shaders useful links and tips](https://arugl.medium.com/into-shadertoy-and-shaders-useful-links-and-tips-7f3e2f192275) (*Offline Shadertoy related applications* section).
