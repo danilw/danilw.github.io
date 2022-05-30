@@ -252,7 +252,7 @@ Shader code (same as on shadertoy):
 
 ```c
 
-// Created by Danil (2021+)
+// Created by Danil (2022+)
 // License - CC0 or use as you wish
 
 // made for https://github.com/danilw/danilw.github.io/blob/master/blog/simple_SDF_tutorial/
