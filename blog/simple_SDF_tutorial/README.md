@@ -11,7 +11,7 @@ ___
 
 ![](https://www.ronja-tutorials.com/assets/images/posts/035/Result.gif)
 
-Link to external blog post-tutorial, **read it first if you do not know what SDF is** - [https://www.ronja-tutorials.com/post/035-2d-sdf-combination/](https://www.ronja-tutorials.com/post/035-2d-sdf-combination/#simple-combinations)
+### Link to external blog post-tutorial, **read it first if you do not know what SDF is** - [https://www.ronja-tutorials.com/post/035-2d-sdf-combination/](https://www.ronja-tutorials.com/post/035-2d-sdf-combination/#simple-combinations)
 
 Look there for *Simple Combinations* such as - merge, intersect, subtract, and others.
 
