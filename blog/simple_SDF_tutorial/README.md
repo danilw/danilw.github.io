@@ -2,7 +2,7 @@
 
 # Simple 2D SDF tutorial
 
-**Better tutorial, or watch first** - [Inigo Quilez
+### Better tutorial, or watch first - [Inigo Quilez
 The basics of Painting with Maths](https://youtu.be/0ifChJ0nJfM)
 
 This my tutorial shows how to use 2D SDF shape to create some basic effect.
