@@ -1,6 +1,6 @@
 * * * * *
 
-## Simple 2D SDF tutorial
+# Simple 2D SDF tutorial
 
 **Better tutorial, or watch first** - [Inigo Quilez
 The basics of Painting with Maths](https://youtu.be/0ifChJ0nJfM)
@@ -20,7 +20,7 @@ Down below I use **merge operation**, that literally just `min(shape1, shape2);`
 [2D distance functions](https://iquilezles.org/articles/distfunctions2d/) - this page has list of **more basic SDF shapes**, I use just Circle.
 ___
 
-### Content:
+## Content:
 
 1. SDF of Circle and Circle
 2. Two circles
