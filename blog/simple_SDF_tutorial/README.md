@@ -252,10 +252,10 @@ Shader code (same as on shadertoy):
 
 ```c
 
-// Created by Danil (2021+) https://twitter.com/AruGL
+// Created by Danil (2021+)
 // License - CC0 or use as you wish
 
-// made for 
+// made for https://github.com/danilw/danilw.github.io/blob/master/blog/simple_SDF_tutorial/
 
 // uncomment v1 or v2 or v3 to see different animation (line 77-79)
 
