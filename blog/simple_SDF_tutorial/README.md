@@ -32,7 +32,7 @@ ___
 Copy-paste shader code to [Shadertoy.com](https://www.shadertoy.com/)
 ___
 
-##SDF of Circle and Circle:
+## SDF of Circle and Circle:
 ![](1.png)
 
 Basic SDF
@@ -61,7 +61,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 }
 ```
 
-Edge of SDF
+**Edge of SDF** (selecting border)
 ```c
 float sdCircle( vec2 p, float r )
 {
@@ -93,7 +93,7 @@ And `smoothstep` to select smooth edge, result on screenshot.
 
 ___
 
-##Two circles:
+## Two circles:
 ```c
 float sdCircle( vec2 p, float r )
 {
@@ -127,7 +127,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 I just add position of circles, everything else is same. (and changed radius of circles to 0.3)
 ___
 
-##Glow edge:
+## Glow edge:
 ![](2.png)
 
 **Basic SDF glow is** - `0.01/d`
@@ -169,7 +169,7 @@ Line `col = col*0.051/max(abs(d),0.0001);` glow for this example.
 
 ___
 
-##Adding Noise glow:
+## Adding Noise glow:
 ![](3.png)
 
 Added `fbm` function and use of fbm noise value `d=d*d_fbm;`
@@ -243,7 +243,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 ```
 ___
 
-##Animating everything (**final effect**):
+## Animating everything (**final effect**):
 ![](4.png)
 
 Shadertoy shader link - [https://www.shadertoy.com/view/fsdyRl](https://www.shadertoy.com/view/fsdyRl)
