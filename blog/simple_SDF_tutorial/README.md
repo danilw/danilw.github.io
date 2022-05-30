@@ -17,7 +17,7 @@ Look there for *Simple Combinations* such as - merge, intersect, subtract, and o
 
 Down below I use **merge operation**, that literally just `min(shape1, shape2);` so I use directly `min`.
 
-This page has list of **more basic SDF shapes**, I use just Circle [2D distance functions](https://iquilezles.org/articles/distfunctions2d/)
+[2D distance functions](https://iquilezles.org/articles/distfunctions2d/) - this page has list of **more basic SDF shapes**, I use just Circle.
 
 **Content**:
 
