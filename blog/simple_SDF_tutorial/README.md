@@ -133,7 +133,7 @@ ___
 **Basic SDF glow is** - `0.01/d`
 For test use this - `col = vec3(0.01/max(abs(d),0.0001));`
 
-**More correct glow** - look this shadertoy shader [Smoothed Airy intensity / glow ](https://www.shadertoy.com/view/tlc3zM) by FabriceNeyret2.
+**More correct glow** - look this shadertoy shader [Smoothed Airy intensity / glow ](https://www.shadertoy.com/view/tlc3zM) by FabriceNeyret2. (just as reference, not needed in this tutorial)
 
 Code from screenshot:
 ```c
