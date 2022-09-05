@@ -12,33 +12,33 @@ My blog posts with **basic** links:
 
 [**iq and Fabrice articles, glsl reference, and other basic links**](https://github.com/danilw/danilw.github.io/tree/master/blog/Into_Shadertoy_and_Shaders_useful_links_and_tips)
 
-[**https://arugl.medium.com/games-in-the-gpu-shaders-a912414b1894**](about float/int bits/text/UI)
+[**about float/int bits/text/UI**](https://arugl.medium.com/games-in-the-gpu-shaders-a912414b1894)
 
 * * * * *
 
 **Global illumination 3D:**\
 https://www.shadertoy.com/view/4d3fWX - voxels Light Propagation \
-https://www.shadertoy.com/view/WdlyWs, remake https://www.shadertoy.com/view/ssjczV - Voxel Cone Tracing or SDFGI \
+https://www.shadertoy.com/view/WdlyWs, remake https://www.shadertoy.com/view/ssjczV - Voxel Cone Tracing or SDFGI
 
 * * * * *
 
 **Area lights 3D:**\
 https://www.shadertoy.com/view/ldfGWs -  based on Brian Karis's Siggraph 2013\
 https://eheitzresearch.wordpress.com/415-2/ - Polygonal-Light Shading with Linearly Transformed Cosines, there WebGL Demo link in bottom.\
-**Analytic Area Light:**
+**Analytic Area Light:**\
 https://www.shadertoy.com/view/4dVGDt - square\
-https://www.shadertoy.com/view/4tXSR4 - triangle\
+https://www.shadertoy.com/view/4tXSR4 - triangle
 
 * * * * *
 
 **Water 3D:**\
 https://www.vertexshaderart.com/art/YdpjoX8LmWLnbtXQv - basic vertex water\
-https://www.shadertoy.com/view/NlKGWK - best by performance optimized water, based on CC0/MIT water\
+https://www.shadertoy.com/view/NlKGWK - best by performance optimized water, based on CC0/MIT water
 
 * * * * *
 
 **Complex production ready study/materials: (actually useful)**\
-**The technical art of sea of thieve** - https://dl.acm.org/doi/10.1145/3214745.3214820 video(scroll down there) about Water, Clouds, vertex-Ropes
+**The technical art of sea of thieve** - https://dl.acm.org/doi/10.1145/3214745.3214820 video(scroll down there) about Water, Clouds, vertex-Ropes\
 **Graphics Studies Compilation** - http://www.adriancourreges.com/blog/2020/12/29/graphics-studies-compilation/ list of graphic study from modern games (I recommend to read Doom 2016, Witcher3, GTA5)
 
 * * * * *
@@ -59,7 +59,7 @@ This Wicked Engine blog https://wickedengine.net/ has lots of good shader-relate
 Examples:\
 http://www.joshbarczak.com/blog/?p=667 Geometry shaders are not making efficient use of the GPU hardware (blog post from 2015, nothing changed)\
 https://wickedengine.net/2020/09/06/variable-rate-shading-first-impressions/ Variable Rate Shading\
-https://wickedengine.net/2020/01/05/tile-based-optimization-for-post-processing/ Tile-based optimization for post processing\
+https://wickedengine.net/2020/01/05/tile-based-optimization-for-post-processing/ Tile-based optimization for post processing
 
 * * * * *
 
@@ -84,9 +84,9 @@ Alternative/more complex MSDF https://github.com/Chlumsky/msdf-atlas-gen\
 
 * * * * *
 
-**Improved Normals from Depth**  https://www.shadertoy.com/view/fsVczR\
-Original https://atyuwen.github.io/posts/normal-reconstruction\
-My Godot port https://godotforums.org/discussion/30111/improved-normal-from-depth-shader\
+**Improved Normals from Depth**  https://www.shadertoy.com/view/fsVczR \
+Original https://atyuwen.github.io/posts/normal-reconstruction \
+My Godot port https://godotforums.org/discussion/30111/improved-normal-from-depth-shader
 
 * * * * *
 
@@ -99,7 +99,7 @@ https://www.shadertoy.com/view/fldXWS - 2d Subdivision with 3-rd height\
 https://www.shadertoy.com/view/slXGDl - The Infinite Pattern\
 https://www.shadertoy.com/view/NdcBzf - Dungeon Generator\
 https://www.shadertoy.com/view/stdGz4 - 2d Subdivision\
-https://www.shadertoy.com/view/sdBczK - 2d Subdivision, for more just search on Shadertoy "tag=subdiv"\
+https://www.shadertoy.com/view/sdBczK - 2d Subdivision, for more just search on Shadertoy "tag=subdiv"
 
 My city https://www.shadertoy.com/view/Ntcyz7 - can be interesting as pathtracer implementaion of Voxel-city with interior.
 
