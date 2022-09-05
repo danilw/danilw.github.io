@@ -80,8 +80,8 @@ Interesting point about raytracing Quad surface:
 
 * * * * *
 
-CC0 shadertoy font to texture generator https://github.com/otaviogood/shader_fontgen\
-Alternative/more complex MSDF https://github.com/Chlumsky/msdf-atlas-gen\
+CC0 shadertoy font to texture generator https://github.com/otaviogood/shader_fontgen \
+Alternative/more complex MSDF https://github.com/Chlumsky/msdf-atlas-gen
 
 * * * * *
 
