@@ -10,9 +10,8 @@ Main point of this - use case of linked shaders here must be not rare, or/and sh
 
 My blog posts with **basic** links:
 
-[**iq and Fabrice articles, glsl reference, and other basic links**](https://github.com/danilw/danilw.github.io/tree/master/blog/Into_Shadertoy_and_Shaders_useful_links_and_tips)
-
-[**about float/int bits/text/UI**](https://arugl.medium.com/games-in-the-gpu-shaders-a912414b1894)
+[iq and Fabrice articles, glsl reference, and other basic links](https://github.com/danilw/danilw.github.io/tree/master/blog/Into_Shadertoy_and_Shaders_useful_links_and_tips)\
+[about float/int bits/text/UI](https://arugl.medium.com/games-in-the-gpu-shaders-a912414b1894)
 
 * * * * *
 
