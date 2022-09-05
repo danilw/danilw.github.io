@@ -49,7 +49,8 @@ https://juretriglav.si/compressing-global-illumination-with-neural-networks/ - s
 
 * * * * *
 
-https://blog.demofox.org/2020/07/11/interpolating-data-over-arbitrary-shapes-with-laplaces-equation-and-walk-on-spheres/ Interpolating Data Over Arbitrary Shapes (shaders examples)\
+https://blog.demofox.org/2020/07/11/interpolating-data-over-arbitrary-shapes-with-laplaces-equation-and-walk-on-spheres/ Interpolating Data Over Arbitrary Shapes (shaders examples)
+
 > in this blog post we talked about how to use **monte carlo integration and the walk on spheres algorithm to interpolate data between very arbitrary borders in any dimension.**
 
 * * * * *
@@ -72,7 +73,8 @@ https://www.shadertoy.com/view/flBfzm - similar as above, but works on 32bit flo
 https://www.shadertoy.com/view/7tlBW8 - simple Quadrics \
 https://www.shadertoy.com/view/fddBD2 - Generalized Ellipsoid intersection\
 https://www.shadertoy.com/view/7dSBWz - Cyclides (more similar in mla shadertoy profile)\
-Interesting point about raytracing Quad surface:\
+Interesting point about raytracing Quad surface:
+
 > Raymarching used to be described as a variant of Newton's method.
 > It can certainly be described as finding the zeros of a function by using an estimate of the derivative - in the ray marching case,
 
@@ -93,7 +95,7 @@ My Godot port https://godotforums.org/discussion/30111/improved-normal-from-dept
 **3d:**\
 https://www.shadertoy.com/view/NddBDM - The Infinite City III\
 https://www.shadertoy.com/view/fldXWS - 2d Subdivision with 3-rd height\
-﻿https://www.shadertoy.com/view/fdyGDt - 3d Subdivision, for more look its author Tater profile\
+https://www.shadertoy.com/view/fdyGDt - 3d Subdivision, for more look its author Tater profile\
 **2d:**\
 https://www.shadertoy.com/view/slXGDl - The Infinite Pattern\
 https://www.shadertoy.com/view/NdcBzf - Dungeon Generator\
