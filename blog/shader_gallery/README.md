@@ -113,5 +113,10 @@ https://www.shadertoy.com/view/ftcyW4 4D Cube
 CSG but without raymarching, raytracing CSG\
 https://www.shadertoy.com/view/Nl3yDN
 
+* * * * *
+
+**Forward Gradient Fitting** https://www.shadertoy.com/view/NlKyDd (look on `target_func` in Common) - alternative to Siren https://github.com/vsitzmann/siren, can be used to transform linear gradient(texture) to just shader code
+
+
 
 
