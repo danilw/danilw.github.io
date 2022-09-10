@@ -117,6 +117,15 @@ https://www.shadertoy.com/view/Nl3yDN
 
 **Forward Gradient Fitting** https://www.shadertoy.com/view/NlKyDd (look on `target_func` in Common) - alternative to Siren https://github.com/vsitzmann/siren, can be used to transform linear gradient(texture) to just shader code
 
+* * * * *
+
+complex numbers (for SDF-like stuff):\
+complex plot - https://www.shadertoy.com/view/ft3fzM \
+Smooth Winding Number - (https://www.shadertoy.com/results?query=Smooth+Winding+Number)[shadertoy Smooth Winding Number]\
+
+**Visualizing Complex Numbers Using GLSL** https://hturan.com/writing/complex-numbers-glsl - this good study/explanation for how it can be used.
+
+I think can be used as "SDF (2d or 3d, or lightmaps) cloud fitting function" like described there - **Fast Winding Numbers for Soups and Clouds** https://www.dgp.toronto.edu/projects/fast-winding-numbers/
 
 
 
