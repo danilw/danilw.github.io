@@ -121,7 +121,7 @@ https://www.shadertoy.com/view/Nl3yDN
 
 complex numbers (for SDF-like stuff):\
 complex plot - https://www.shadertoy.com/view/ft3fzM \
-Smooth Winding Number - (https://www.shadertoy.com/results?query=Smooth+Winding+Number)[shadertoy Smooth Winding Number]\
+Smooth Winding Number - [shadertoy Smooth Winding Number](https://www.shadertoy.com/results?query=Smooth+Winding+Number)\
 
 **Visualizing Complex Numbers Using GLSL** https://hturan.com/writing/complex-numbers-glsl - this good study/explanation for how it can be used.
 
