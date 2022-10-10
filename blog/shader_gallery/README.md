@@ -100,7 +100,8 @@ https://www.shadertoy.com/view/fdyGDt - 3d Subdivision, for more look its author
 https://www.shadertoy.com/view/slXGDl - The Infinite Pattern\
 https://www.shadertoy.com/view/NdcBzf - Dungeon Generator\
 https://www.shadertoy.com/view/stdGz4 - 2d Subdivision\
-https://www.shadertoy.com/view/sdBczK - 2d Subdivision, for more just search on Shadertoy "tag=subdiv"
+https://www.shadertoy.com/view/sdBczK - 2d Subdivision, for more just search on Shadertoy "tag=subdiv"\
+https://www.shadertoy.com/view/ftyBDc - distance to rotated boxes grid on floor 2d
 
 My city https://www.shadertoy.com/view/Ntcyz7 - can be interesting as pathtracer implementaion of Voxel-city with interior.
 
