@@ -160,8 +160,10 @@ Vulkan code almost same for both shaders, maybe because glslangValidator optimiz
 
 Compiled code of optimized version of shader in Vulkan and OpenGL is different.
 
-But STL not always bad! (not always the main source of slowdown)
+STL is Always bad! (smaller arrays and less array read/write is always better)
 ----------------------------------------------------------------
+
+*But STL not always bad! (not always the main source of slowdown)*
 
 Remember that if you have huge-shader with lots of branches and use arrays --- because in shader everything unrolled you can have thousands of STL as result, but shader will work very fast.
 
@@ -178,7 +180,19 @@ Vulkan statistic of same shader
 
 OpenGL version use 3600+ STL instructions, but shader works same fast in OpenGL and Vulkan (very similar FPS, even on low-end Nvidia GPU).
 
-In this case, STL does not have huge impact on performance.
+*In this case, STL does not have huge impact on performance. (**I not 100% sure in this case, but STL do impact performance even in this large shader**)*
+
+Optimization of this my [GLSL Auto Tetris](https://www.shadertoy.com/view/3dlSzs) shader:
+-----------------------------------------------------------------------------------------
+
+Main performance speedup is --- switching from using `int[220]` array to `uint[7]` .\
+I use `int[220]` to store 220 bits, so *seven uints* is enough to store it.
+
+Look Common on linked Shadertoy shader --- line 11 `#define use_uint_map`\
+*Uncomment this define to use new map.*
+
+I see about 5x speedup *(in OpenGL)*--- if you set `#define AI 0` in Common to test maximum shader load.\
+*In Vulkan --- I think about ~2 times faster from using smaller array.*
 
 Analyze and optimize neural(ML) shaders:
 ========================================
