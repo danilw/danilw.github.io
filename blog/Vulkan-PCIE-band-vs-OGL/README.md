@@ -14,7 +14,7 @@ Main point:
 
 *if tools to meassure performance is correct, and I not misinterpret results*
 
-**PCIE is not bottleneck for nanovg_vulkan.***\
+**PCIE is not bottleneck for nanovg_vulkan.**\
 And PCIE usage by nanovg_vulkan is far from even 50% of PCIE bandtwidth on this Nvidia GPU.
 
 
