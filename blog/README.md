@@ -7,5 +7,4 @@ ___
 - [Games in the GPU shaders](Games_in_the_GPU_shaders/README.md)
 - [Simple 2D SDF tutorial](simple_SDF_tutorial/README.md)
 - [Launching 619 thousand Tetris on GPU, their rendering, and a simple bot](Launching_619_thousand_Tetris_on_GPU/README.md)
-- [Shader-Gallery](shader_gallery/README.md)
 - [Decompiling and optimizing Nvidia shaders](decompiling_and_optimizing_nvidia_shaders/README.md)
