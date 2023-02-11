@@ -35,7 +35,7 @@ When Integrated GPU set to main - result of Nvtop is flooded with "frame copy fr
 
 - Compare to *Nvidia is main GPU* - [no overhead, ~10MiB RX / ~2MiB TX  on 400FPS](Vk_fps_nv_main.png). *On screenshot right bot number is FPS*
 
-Screenshots from [my shder-launcher](https://github.com/danilw/vulkan-shader-launcher) *example_minimal press 1 key to see fps, and launch with `--present_mode 0 --gpu 0` and change gpu index*, not from Khronos Vulkan Samples because multiple GPU support broken there.
+Screenshots from [my shader-launcher](https://github.com/danilw/vulkan-shader-launcher) *example_minimal press 1 key to see fps, and launch with `--present_mode 0 --gpu 0` and change gpu index*, not from Khronos Vulkan Samples because multiple GPU support broken there.
 
 ___
 
