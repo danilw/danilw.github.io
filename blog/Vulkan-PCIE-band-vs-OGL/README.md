@@ -84,20 +84,24 @@ Any Youtube video will also lag in fullscreen.\
 By **lag** - I mean **FPS will be less than 30**.\
 Anything that larger than 1280x720 as video or single canvas or WebGL element - will drop FPS from 60 to lower nmber.
 
-Only use of Vulkan in Chrome is - you can select GPU to use with, when in OpenGL Chrome will always use only "main GPU.\
-So when you have multiple GPU, or even simple integrated+discrete - Vulkan is useful in Chrome, even when it so much slower than OpenGL.
+*Only use of Vulkan in Chrome is - you can select GPU to use, when in OpenGL Chrome will always use only "main" GPU.*\
+*So when you have multiple GPU, or even simple integrated+discrete - Vulkan is useful in Chrome, even when it so much slower than OpenGL.*
 
-### Screenshots below show PCIE usage in WebGL when it use OPenGL and Vulkan.
+### Screenshots below show PCIE usage in WebGL when it use OpenGL and Vulkan.
 
 *I use NanoGUI WebGL port as example, because NanoGUI use nanovg so it can be related* - [nanogui WebGL link](https://danilw.github.io/GLSL-howto/nanogui/nanogui.html)
 
 Main point here is - **very high PCIE usage in Vulkan compare to OpenGL**.\
 *This size of canvas still work in 60 FPS in Vulkan, but in fullscreen it is slideshow - obviously Chrome issue/bug.*
 
-WebGL in *OpenGL* **screenshot**:\
+WebGL in ***OpenGL* screenshot**:\
 **RX: 55MiB TX: 9MiB**
+
 ![OGL_chrome_wgl](OGL_chrome_wgl.png)
 
-WebGL in *Vulkan* **screenshot**:\
+WebGL in ***Vulkan* screenshot**:\
 **RX: 180MiB TX: 190MiB**
+
 ![Vk_chrome_wgl](Vk_chrome_wgl.png)
+
+___
