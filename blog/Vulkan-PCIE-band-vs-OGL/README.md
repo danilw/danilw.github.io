@@ -10,7 +10,7 @@ Main point:
 
 > Does nanovg_vulkan slowdown come from PCIE bottleneck, because some memory flag set incorrectly in source code or something related to memory speed.
 
-### Reslt of this statistic:
+### Result of this statistic:
 
 *if tools to meassure performance is correct, and I not misinterpret results*
 
