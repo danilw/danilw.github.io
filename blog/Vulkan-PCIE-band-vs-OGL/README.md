@@ -31,7 +31,7 @@ When Integrated GPU set to main - result of Nvtop is flooded with "frame copy fr
 
 **Screenshots:**
 
-- When *Integrated GPU is main* - [2GiB+ goes just to transfer 000FPS to RAM](Vk_fps_nv_sec.png). *On screenshot right bot number is FPS*.
+- When *Integrated GPU is main* - [1.5GiB+ goes just to transfer 170FPS to RAM](Vk_fps_nv_sec.png). *On screenshot right bot number is FPS*.
 
 - Compare to *Nvidia is main GPU* - [no overhead, ~10MiB RX / ~2MiB TX  on 400FPS](Vk_fps_nv_main.png). *On screenshot right bot number is FPS*
 
