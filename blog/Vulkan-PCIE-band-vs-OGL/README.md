@@ -69,7 +69,8 @@ Video played in Chrome that use OpenGL as WebGL render, **this video play on 60f
 **Screenshot with RX: 2.48GiB**
 ![OGL_chrome_youtbe_rx](OGL_chrome_youtbe_rx.jpg)
 
-**So nanovg_vulkan does not even go to 50% of PCIE usage**
+**So nanovg_vulkan does not even go to 50% of PCIE usage.**\
+While this video playing - RX jump around 1-2GiB, and TX is 50-400MiB.
 
 ___
 
