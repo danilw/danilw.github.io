@@ -59,7 +59,7 @@ Youtube video player use WebGL to play "panorama/360°"-videos.
 
 So I open my video *in 4k resoltion* - [Pathtraced voxel city [360° video] Youtbe link](https://youtu.be/Q2flsB-cQCo)
 
-Video played in Chrome that use OpenGL as WebGL render.\
+Video played in Chrome that use OpenGL as WebGL render, this video play on 60fps with no lags when in 4k.\
 `chrome.exe --use-angle=gl`\
 *because Vulkan WebGL Chrome render is more than 10x slower compare to OpenGL, and 4k video lags in Vulkan in Chrome, look below where I talk about Vulkan WebGL*
 
