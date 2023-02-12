@@ -57,7 +57,7 @@ How peak of PCIE bandwidth usage look on this Nvidia GPU:
 
 Youtube video player use WebGL to play "panorama/360°"-videos.
 
-So I open my video *in 4k resoltion* - [Pathtraced voxel city [360° video] Youtbe link](https://youtu.be/Q2flsB-cQCo)
+I open my video *in 4k resoltion* - [Pathtraced voxel city [360° video] Youtbe link](https://youtu.be/Q2flsB-cQCo)
 
 Video played in Chrome that use OpenGL as WebGL render, **this video play on 60fps with no lags when in 4k**.\
 `chrome.exe --use-angle=gl`\
@@ -69,7 +69,7 @@ Video played in Chrome that use OpenGL as WebGL render, **this video play on 60f
 **Screenshot with RX: 2.48GiB**
 ![OGL_chrome_youtbe_rx](OGL_chrome_youtbe_rx.jpg)
 
-**So nanovg_vulkan does not even go to 50% of PCIE usage.**\
+**That means nanovg_vulkan does not even go to 50% of PCIE usage.**\
 While this video playing - RX jump around 1-2GiB, and TX is 50-400MiB.
 
 ___
@@ -86,7 +86,7 @@ By **lag** - I mean **FPS will be less than 30**.\
 Anything that larger than 1280x720 as video or single canvas or WebGL element - will drop FPS from 60 to lower nmber.
 
 *Only use of Vulkan in Chrome is - you can select GPU to use, when in OpenGL Chrome will always use only "main" GPU.*\
-*So when you have multiple GPU, or even simple integrated+discrete - Vulkan is useful in Chrome, even when it so much slower than OpenGL.*
+*When you have multiple GPU, or even simple integrated+discrete - Vulkan is useful in Chrome, even when it so much slower than OpenGL.*
 
 ### Screenshots below show PCIE usage in WebGL when it use OpenGL and Vulkan.
 
