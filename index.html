@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Hello world!</title>
+      <style type="text/css">
+         body
+         {
+         font-size:       62.5%;
+         margin:          0;
+         padding:         0;
+         background-color: #000;
+         font-family:     'lucida grande', arial, tahoma, sans-serif;
+         }
+         #container
+         {
+         margin:          0 auto;
+         padding-top:20px;
+         width:           683px;
+         position:        relative;
+         background-color:  #333;
+         }
+         #header
+         {
+         margin:          0 auto;
+         width:           683px;
+         height:          250px;
+         background-color: #000000;
+         /*background:      transparent url('header.jpg') top left repeat;*/
+         }
+         .headtitle
+         {
+         position:        absolute;
+         font-family:     sans-serif;
+         font-size:       35px;
+         color:           #bbbde090;
+         top:             20px;
+         left:            33px;
+         }
+         #menu
+         {
+         margin:          0 21px;
+         }
+         .tabs .switch {
+         position: absolute;
+         z-index: 1;
+         }
+         .tabs .tab {
+         display: inline-block;
+         position: relative;
+         cursor: pointer;
+         z-index: 2;
+         }
+         #home:checked ~ .tab-links #home-tab,
+         #lista:checked ~ .tab-links #lista-tab,
+         #thirdtab:checked ~ .tab-links #thirdtab-tab {
+         background-color: #FDFDFD;
+         color: #000;
+         cursor: default;
+         }
+         .tabs .panels {
+         min-height:      390px;
+         width:           640px;
+         margin:          0 auto;
+         background-color:#FDFDFD;
+         }
+         .tabs .panel {
+         position: absolute;
+         opacity: 0;
+         }
+         #home:checked ~ .panels #home-panel,
+         #lista:checked ~ .panels #lista-panel,
+         #thirdtab:checked ~ .panels #thirdtab-panel {
+         position: relative;
+         left: 0;
+         opacity: 1;
+         }
+         .tabs .tab {
+         background-color: #333;
+         color:           #feaf2b;
+         padding:         10px 7px 10px 7px;
+         font-size:       1em;
+         font-family:     'lucida grande', arial, sans-serif;
+         font-weight:     bold;
+         text-decoration: none;
+         }
+         .tabs .tab:hover {
+         background-color: #feaf2b;
+         color: #fff;
+         }
+         .insidecontent
+         {
+         float:           left;
+         padding-left:    25px;
+         padding-right:    25px;
+         width:           auto;
+         }
+         .insidecontent p
+         {
+         margin:          0;
+         color:           #767676;
+         font-family:     Tahoma;
+         font-size:       1.2em;
+         line-height:     170%;
+         }
+         h1
+         {
+         margin:          0;
+         font-weight:     normal;
+         color:           #6A7919;
+         font-size:       2.5em;
+         font-family:Times;
+         }
+         h2
+         {
+         margin:          0;
+         display:         inline;
+         position:        relative;
+         top:             -1.5em;
+         left:            2em;
+         font-size:       1.8em;
+         font-weight:     normal;
+         color:           #94c258;
+         }
+         h3
+         {
+         margin:          0;
+         font-size:       1.5em;
+         font-weight:     normal;
+         color:           #94C258;
+         }
+         #footer
+         {
+         margin:          0 auto;
+         width:           641px;
+         height:          39px;
+         }
+         #footer span
+         {
+         display:         block;
+         position:        relative;
+         font-family:    Tahoma;
+         font-size:       1.2em;
+         padding:         10px;
+         color:           #767676;
+         }
+         .block_container {
+         }
+         .block_container > div {
+         display: inline-block;
+         }
+         #ylink a:link,#ylink a:visited {
+         background-color: #ff33ad;
+         font-family:     Tahoma;
+         font-size:       1.2em;
+         color: white;
+         padding: 10px 7px 10px 7px;
+         text-decoration: none;
+         }
+         #ylink a:hover,#ylink a:active {
+         background-color: #ff0da0;
+         }
+         #glink a:link,#glink a:visited {
+         background-color: #3ca634;
+         font-family:     Tahoma;
+         font-size:       1.2em;
+         color: white;
+         padding: 10px 7px 10px 7px;
+         text-decoration: none;
+         }
+         #glink a:hover,#glink a:active {
+         background-color: #009b3b;
+         }
+         #tlink a:link,#tlink a:visited {
+         background-color: #00a5f2;
+         font-family:     Tahoma;
+         font-size:       1.2em;
+         color: white;
+         padding: 10px 7px 10px 7px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         }
+         #tlink a:hover,#tlink a:active {
+         background-color: #006ad7;
+         }
+         #itlink a:link,#itlink a:visited {
+         background-color: #ff5859;
+         font-family:     Tahoma;
+         font-size:       1.2em;
+         color: white;
+         padding: 10px 7px 10px 7px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         }
+         #itlink a:hover,#itlink a:active {
+         background-color: #cc4748;
+         }
+         #lnlink a:link,#lnlink a:visited {
+         background-color: #0076b2;
+         font-family:     Tahoma;
+         font-size:       1.2em;
+         color: white;
+         padding: 10px 7px 10px 7px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         }
+         #lnlink a:hover,#lnlink a:active {
+         background-color: #00699f;
+         }
+         a.gllinks {
+         outline: none;
+         text-decoration: none;
+         padding: 2px 1px 0;
+         }
+         a.gllinks:link {
+         color: #2e89a8;
+         }
+         a.gllinks:visited {
+         color: #457c8f;
+         }
+         a.gllinks:focus {
+         border-bottom: 1px solid;
+         background:#9acfe1;
+         }
+         a.gllinks:hover {
+         border-bottom: 1px solid;
+         background: #55c1e5;
+         }
+         a.gllinks:active {
+         background: #265301;
+         color: #CDFEAA;
+         }
+         a.olinks {
+         outline: none;
+         text-decoration: none;
+         padding: 2px 1px 0;
+         }
+         a.olinks:link {
+         color: #767676;
+         }
+         a.olinks:visited {
+         color: #9e9e9e;
+         }
+         a.olinks:focus {
+         border-bottom: 1px solid;
+         background:#858585;
+         color: #FDFDFD;
+         }
+         a.olinks:hover {
+         border-bottom: 1px solid;
+         background: #acacac;
+         color: #FDFDFD;
+         }
+         a.olinks:active {
+         background: #383838;
+         color: #FDFDFD;
+         }
+         a.ytlinks {
+         outline: none;
+         text-decoration: none;
+         padding: 2px 1px 0;
+         }
+         a.ytlinks:link {
+         color: #982323;
+         }
+         a.ytlinks:visited {
+         color: #8f4545;
+         }
+         a.ytlinks:focus {
+         border-bottom: 1px solid;
+         background:#e19a9a;
+         }
+         a.ytlinks:hover {
+         border-bottom: 1px solid;
+         background: #f6a2a2;
+         }
+         a.ytlinks:active {
+         background: #530101;
+         color: #FECDAA;
+         }
+      </style>
+      <script type = "glsl" id = "standard-vs">
+         precision mediump float;
+         attribute vec4 a_Position;
+         attribute vec4 a_Color;
+         varying vec4 color;
+         void main() {
+         gl_Position = a_Position;
+         }
+      </script>
+      <script type = "glsl" id = "standard-frag">
+         precision mediump float;
+         varying vec4 color;
+         uniform float u_time;
+         uniform int vpos;
+         uniform int rc;
+         uniform vec2 u_resolution;
+         uniform sampler2D u_texture1;
+         uniform sampler2D u_texture2;
+         uniform sampler2D u_texture3;
+         #define iTime u_time
+         #define iResolution u_resolution
+         #define iChannel0 u_texture1
+         #define iChannel1 u_texture2
+         #define iChannel2 u_texture3
+         //original author copyright
+         /*
+         * created by dmytro rubalskyi (ruba) https://www.shadertoy.com/view/XlXGzB
+         */
+         #define M_MAX 1e9
+         #define KEY_M (float(77)+0.5)/256.0
+         const float M_PI = 3.1415926535;
+         const float M_4PI = 4.0 * M_PI;
+         ///////////////////////////////////////
+         // planet
+         const float earthRadius  = 6360.0;
+         const float atmoHeight     = 60.0;
+         const float atmoRadius     = earthRadius + atmoHeight;
+         const vec3 earthCenter     = vec3(0.0, 0.0, 0.0);
+         ///////////////////////////////////////
+         // sun
+         const float distanceToSun = 1.496e8;
+         const float sunRadius = 2.0 * 109.0 * earthRadius;
+         const float sunIntensity = 10.0;
+         ///////////////////////////////////////
+         // atmosphere
+         const vec3 betaR       = vec3(5.8e-4, 1.35e-3, 3.31e-3);
+         const vec3 betaM       = vec3(4.0e-3, 4.0e-3, 4.0e-3);
+         const vec3 M_4PIbetaR    = M_4PI * betaR;
+         const vec3 M_4PIbetaM    = M_4PI * betaM;
+         const float heightScaleRayleight = 6.0;
+         const float heightScaleMie = 1.2;
+         const float g = -0.76;
+         const float NUM_DENSITY_SAMPLES = 1.0;
+         const float NUM_VIEW_SAMPLES = 2.0;
+         const int  INT_NUM_DENSITY_SAMPLES = int(NUM_DENSITY_SAMPLES);
+         const int  INT_NUM_VIEW_SAMPLES = int(NUM_VIEW_SAMPLES);
+         ///////////////////////////////////////
+         // ray - sphere intersection
+         vec2 iSphere(vec3 ro, vec3 rd, vec4 sph)
+         {
+         vec3 tmp = ro - sph.xyz;
+         float b = dot(rd, tmp);
+         float c = dot(tmp, tmp) - sph.w * sph.w;
+         float disc = b * b - c;
+         if(disc < 0.0) return vec2(-M_MAX, -M_MAX);
+         float disc_sqrt = sqrt(disc);
+         float t0 = -b - disc_sqrt;
+         float t1 = -b + disc_sqrt;
+         return vec2(t0, t1);
+         }
+         ///////////////////////////////////////
+         // Henyey-Greenstein phase function
+         float phase(float nu, float g)
+         {
+         return (3.0 * (1.0 - g * g) * (1.0 + nu * nu)) / (2.0 * (2.0 + g * g) * pow(1.0 + g * g - 2.0 * g * nu, 1.5));
+         }
+         ///////////////////////////////////////
+         // density integral calculation from p0 to p1
+         // for mie and rayleight
+         vec2 densityOverPath(vec3 p0, vec3 p1, vec2 prescaler)
+         {
+         float l = length(p1 - p0);
+         vec3  v = (p1 - p0) / l;
+         l /= NUM_DENSITY_SAMPLES;
+         vec2 density = vec2(0.0);
+         float t = 0.0;
+         for(int i = 0; i < INT_NUM_DENSITY_SAMPLES; i++)
+         {
+         vec3 sp = p0 + v * (t + 0.5 * l);
+         vec2 h = vec2(length(sp) - earthRadius);
+         density += exp(-h / prescaler);
+         t += l;
+         }
+         return l * density;
+         }
+         ///////////////////////////////////////
+         // inscatter integral calculation
+         vec4 inscatter(vec3 cam, vec3 v, vec3 sun)
+         {
+         vec4 atmoSphere  = vec4(earthCenter, atmoRadius);
+         vec4 earthSphere   = vec4(earthCenter, earthRadius);
+         vec2 t0 = iSphere(cam, v, atmoSphere);
+         vec2 t1 = iSphere(cam, v, earthSphere);
+         bool bNoPlanetIntersection = t1.x < 0.0 && t1.y < 0.0;
+         float farPoint = bNoPlanetIntersection ? t0.y : t1.x;
+         float nearPoint = t0.x > 0.0 ? t0.x : 0.0;
+         float l = (farPoint - nearPoint) / NUM_VIEW_SAMPLES;
+         cam += nearPoint * v;
+         float t = 0.0;
+         vec3 rayleight = vec3(0.0);
+         vec3 mie = vec3(0.0);
+         vec2 prescalers = vec2(heightScaleRayleight, heightScaleMie);
+         vec2 densityPointToCam = vec2(0.0);
+         for(int i = 0; i < INT_NUM_VIEW_SAMPLES; i++)
+         {
+         vec3 sp = cam + v * (t + 0.5 * l);
+         float tc = iSphere(sp, sun, vec4(earthCenter, atmoRadius)).y;
+         vec3 pc = sp + tc * sun;
+         vec2 densitySPCam = densityOverPath(sp, cam, prescalers);
+         vec2 densities = densityOverPath(sp, pc, prescalers) + densitySPCam;
+         vec2 h = vec2(length(sp) - earthRadius);
+         vec2 expRM = exp(-h / prescalers);
+         rayleight  += expRM.x * exp( -M_4PIbetaR * densities.x );
+         mie    += expRM.y * exp( -M_4PIbetaM * densities.y );
+         densityPointToCam += densitySPCam;
+         t += l;
+         }
+         rayleight *= l;
+         mie *= l;
+         vec3 extinction = exp( - (M_4PIbetaR * densityPointToCam.x + M_4PIbetaM * densityPointToCam.y));
+         float nu = dot(sun, -v);
+         vec3 inscatter_ = sunIntensity * (betaM * mie * phase(nu, g) + betaR * phase(nu, 0.0) * rayleight);
+         return vec4(inscatter_, extinction.r * float(bNoPlanetIntersection));
+         }
+         ///////////////////////////////////////
+         // rotation around axis Y
+         vec3 rotate_y(vec3 v, float angle)
+         {
+         vec3 vo = v; float cosa = cos(angle); float sina = sin(angle);
+         v.x = cosa*vo.x - sina*vo.z;
+         v.z = sina*vo.x + cosa*vo.z;
+         return v;
+         }
+         #define round(x, f) (floor((x)/(f) + 0.5) * (f))
+         float random(float p)
+         {
+         return fract(52.043*sin(p*205.429));
+         }
+         float random2(float p)
+         {
+         return random(p)*2.0-1.0;
+         }
+         vec3 stars(vec2 uv)
+         {
+         vec2 r = round(uv, 0.1);
+         float rand = r.x*2.32 + r.y;
+         uv -= r;
+         uv.x += 0.05 * random2(rand);
+         uv.y += 0.05 * random2(rand+0.541);
+         float blink = random(rand+0.5) < 0.21 ? 0.8 + 0.2 * sin(35.0*iTime+random(rand+1.5)) : 0.0;
+         float dark = random(rand+52.0) < 0.5 ? 1.0 : 0.3;
+         return vec3(dark * max(0.0, 0.78 + blink - iResolution.y * length(uv)));
+         }
+         vec4 sunx( in vec2 sc )
+         {
+         vec2 sunXY;
+         vec2 moonXY;
+         sc*=45.;
+         moonXY=vec2(0.);
+         vec4 moonColor = vec4(0.0, 0.0, 0.0, 1.0);
+         float dMoon = sin(2.00 / (distance(moonXY, sc) + 1.0)) * 1.0;
+         moonColor.r = dMoon * 1.7;
+         moonColor.g = dMoon * 1.7;
+         moonColor.b = dMoon * 1.1;
+         return moonColor;
+         }
+         vec4 pos1=vec4(0.205,0.,0.,0.);
+         vec4 pos2=vec4(0.1,1.0,-2.48,0.);
+         vec4 pos3=vec4(1.862,0.75,2.45,0.);
+         void mainImage( out vec4 fragColor, in vec2 fragCoord )
+         {
+         vec2 sc = 2.0 * fragCoord.xy / iResolution.xy - 1.0;
+         sc.x *= iResolution.x / iResolution.y;
+         vec2 iMouse=pos3.xy*iResolution.xy;
+         if(vpos==1)iMouse=pos1.xy*iResolution.xy;
+         if(vpos==2)iMouse=pos2.xy*iResolution.xy;
+         vec3 mouse = 4.0 * vec3(2.0 * iMouse.xy / iResolution.xy - 1.0,0.0);
+         vec3 ro = vec3(0.0);
+         ro =vec3(0.0, earthRadius + 0.1, 1000.0 * abs(cos(iMouse.y /iResolution.y* 1.0)));
+         vec3 rd = normalize(rotate_y(vec3(sc/2.5, 0.82), M_PI - mouse.x));
+         vec3 sun = normalize(vec3(1.0, -.000, 1.0));
+         vec4 col = inscatter(ro, rd, sun);
+         /*vec3 sunPos = sun * distanceToSun;
+         vec4 star = vec4(sunPos, sunRadius);
+         vec2 t0 = iSphere(ro, rd, star);
+         if(t0.x > 0.0)
+         {
+         col.xyz += vec3(1.0,1.0,1.0) * col.a;
+         }
+         */
+         vec3 stars = stars(sc/1.3+vec2(iTime/190.,0.));
+         col.xyz = col.xyz + stars * col.a;
+         col.xyz = pow(col.xyz, vec3(1.0 / 2.2));
+         fragColor = max(vec4(0.),col);
+         if(vpos==2)fragColor+=sunx(sc+pos2.zw).bbra*1.4;
+         if(vpos==1)fragColor=max(fragColor,sunx(sc+pos1.zw).bbra*1.2);
+         if(vpos==3)fragColor=max(fragColor,sunx(sc+pos3.zw).bbra*1.15*1.2);
+         vec2 R = iResolution.xy;
+         vec2 U = fragCoord;
+         U = ( R - abs( U+U - R ) ) / R.y;
+         U = 1. - U/.1;
+         float m = min(U.x,U.y);
+         float M = max(U.x,U.y);
+         //float valx=max((0.),mix(1., 0., ( m<0. ? M : length(U) ) ));
+         //fragColor = min(vec4(1.),max(vec4(0.),fragColor))*min((1.),valx);
+         if(vpos!=1){
+         if(rc==2)fragColor=fragColor.grba;
+         if(rc==3)fragColor=fragColor.rrga;
+         if(rc==4)fragColor=fragColor.rrba;}
+         //fragColor.a=valx;
+         }
+         void main(void) {
+         vec4 fragColor = vec4(0.);
+         mainImage(fragColor,gl_FragCoord.xy);
+         //fragColor.w=1.;
+         gl_FragColor = fragColor;
+         }
+      </script>
+   </head>
+   <body>
+      <div id="container">
+         <div id="header">
+            <div class="headtitle">Hello</div>
+            <canvas id = "gl" width = "683" height = "250" style="visibility:hidden;"></canvas>
+         </div>
+         <script type = "text/javascript">
+            "use strict";
+            var that = this;
+            this.width = 683;
+            this.height = 250;
+            this.gl = null;
+            this.canvas = null;
+            this.rval = Math.random() * 3 + 1;
+            this.rc = Math.random() * 4 + 1;
+            function InitializeShader(gl, source_vs, source_frag, fv, ff)
+            {
+                var ErrorMessage;
+                if ((typeof ff === 'undefined'))
+                    ErrorMessage = "Initializing Shader Program: <standard-vs>, <standard-frag>\r\n";
+                else
+                    ErrorMessage = "Initializing Shader Program: <" + fv + ">, <" + ff + ">";
+                var shader_vs = gl.createShader(gl.VERTEX_SHADER);
+                var shader_frag = gl.createShader(gl.FRAGMENT_SHADER);
+                gl.shaderSource(shader_vs, source_vs);
+                gl.shaderSource(shader_frag, source_frag);
+                gl.compileShader(shader_vs);
+                gl.compileShader(shader_frag);
+                var error = false;
+                if (!gl.getShaderParameter(shader_vs, gl.COMPILE_STATUS)) {
+                    ErrorMessage += gl.getShaderInfoLog(shader_vs);
+                    error = true;
+                }
+                if (!gl.getShaderParameter(shader_frag, gl.COMPILE_STATUS)) {
+                    ErrorMessage += gl.getShaderInfoLog(shader_frag);
+                    error = true;
+                }
+                var program = gl.createProgram();
+                var ret = gl.getProgramInfoLog(program);
+                if (ret !== "")
+                    ErrorMessage += ret;
+                gl.attachShader(program, shader_vs);
+                gl.attachShader(program, shader_frag);
+                if (gl.linkProgram(program) === 0) {
+                    ErrorMessage += "\r\ngl.linkProgram(program) failed with error code 0.";
+                    error = true;
+                }
+                if (error) {
+                    console.log(ErrorMessage + ' ...failed to initialize shader.');
+                    return false;
+                } else {
+                    console.log(ErrorMessage + ' ...shader successfully created.');
+                    return program;
+                }
+            }
+            this.start = null;
+            this.gl = null;
+            this.Shader = null;
+            this.tct = Math.random() * 10000 + 1;
+            function step(T) {
+                if (!that.start)
+                    that.start = T;
+                if (!that.gl) {
+                    console.log("ERROR: webgl lost");
+                    return;
+                }
+                var timex = (T - that.start) / 1000;
+                if (timex > 60000)
+                    that.start = T;
+                that.gl.clearColor(0.0, 0.0, 0.0, 1.0);
+                that.gl.clear(that.gl.COLOR_BUFFER_BIT);
+                that.gl.useProgram(that.Shader);
+                that.gl.uniform1f(that.gl.getUniformLocation(that.Shader, "u_time"), timex + that.tct);
+                that.gl.uniform2f(that.gl.getUniformLocation(that.Shader, "u_resolution"), that.width, that.height);
+                that.gl.uniform1i(that.gl.getUniformLocation(that.Shader, "vpos"), that.rval);
+                that.gl.uniform1i(that.gl.getUniformLocation(that.Shader, "rc"), that.rc);
+                that.gl.drawElements(that.gl.TRIANGLES, 6, that.gl.UNSIGNED_SHORT, 0);
+                window.requestAnimationFrame(step);
+            }
+            document.addEventListener("DOMContentLoaded", function (event) {
+                that.canvas = document.getElementById('gl');
+                that.gl = that.canvas.getContext("webgl2");
+                if (!that.gl) {
+                    console.log('webgl2 not supported, trying webgl');
+                    that.gl = that.canvas.getContext("webgl") || that.canvas.getContext("experimental-webgl") || that.canvas.getContext("moz-webgl") || that.canvas.getContext("webkit-3d");
+                    if (!that.gl) {
+                        console.log('webgl not suported');
+                        return;
+                    } else {
+                        console.log('continue using webgl');
+                    }
+                } else {
+                    console.log('continue with webgl2');
+                }
+                that.canvas.style.cssText = "visibility:visible;";
+                var vs = document.getElementById("standard-vs").innerHTML;
+                var fs = document.getElementById("standard-frag").innerHTML;
+                that.Shader = InitializeShader(that.gl, vs, fs);
+                var vertices = new Float32Array([
+                    -1.0, 1.0, 0.0,
+                    -1.0, -1.0, 0.0,
+                    1.0, -1.0, 0.0,
+                    1.0, 1.0, 0.0
+                ]);
+                var indices = [0, 1, 2, 2, 3, 0];
+                var vertexbuffer = that.gl.createBuffer();
+                var indexbuffer = that.gl.createBuffer();
+                that.gl.bindBuffer(that.gl.ARRAY_BUFFER, vertexbuffer);
+                that.gl.bufferData(that.gl.ARRAY_BUFFER, new Float32Array(vertices), that.gl.STATIC_DRAW);
+                that.gl.bindBuffer(that.gl.ARRAY_BUFFER, null);
+                that.gl.bindBuffer(that.gl.ELEMENT_ARRAY_BUFFER, indexbuffer);
+                that.gl.bufferData(that.gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), that.gl.STATIC_DRAW);
+                that.gl.bindBuffer(that.gl.ELEMENT_ARRAY_BUFFER, null);
+                that.gl.bindBuffer(that.gl.ARRAY_BUFFER, vertexbuffer);
+                that.gl.bindBuffer(that.gl.ELEMENT_ARRAY_BUFFER, indexbuffer);
+                that.gl.viewport(0, 0, that.width, that.height);
+                var coords = that.gl.getAttribLocation(that.Shader, "a_Position");
+                that.gl.vertexAttribPointer(coords, 3, that.gl.FLOAT, false, 0, 0);
+                that.gl.enableVertexAttribArray(coords);
+                window.requestAnimationFrame(step);
+            });
+         </script>
+         <div class="tabs">
+            <input class="switch" type="radio" title="Home" name="switch" id="home" checked="" style="visibility:hidden;">
+            <input class="switch" type="radio" title="List of projects" name="switch" id="lista" style="visibility:hidden;">
+            <!--<input class="switch" type="radio" title="tt" name="switch" id="thirdtab" style="visibility:hidden;">-->
+            <div class="tab-links">
+               <div id="menu">
+                  <label for="home" id="home-tab" class="tab">Home</label>
+                  <label for="lista" id="lista-tab" class="tab">List of projects</label>
+               </div>
+               <!--<label for="thirdtab" id="thirdtab-tab" class="tab">Dessert</label>-->
+            </div>
+            <div class="panels">
+               <div id="home-panel" class="panel active">
+                  <div>
+                     <div class="insidecontent">
+                        <br/>
+                        <h1>Welcome</h1>
+                        <p>
+                           Check my github for projects :)
+                        </p>
+                        <p>me on</p>
+                        <div class="block_container">
+                           <div id="glink"> <a href="https://github.com/danilw" title="" target="_blank">Github</a></div>
+                           <div id="ylink"> <a href="https://www.shadertoy.com/user/morimea" title="" target="_blank">Shadertoy</a></div>
+                           <div id="tlink"> <a href="https://cohost.org/arugl" title="" target="_blank">microblog on Cohost</a></div>
+                        </div>
+                        <p>more</p>
+                        <div class="block_container">
+                           <div id="itlink"> <a href="https://danilw.itch.io/" title="" target="_blank">itch.io</a></div>
+                           <div id="lnlink"> <a href="https://arugl.medium.com/" title="blog on Medium" target="_blank"></a></div>
+                        </div>
+                        <br/><br/>
+                        <h1>Contact</h1>
+                        <p>
+                           email <b><i>s48gs.w&lt;at&gt;gmail.com</i></b><br/>
+                           <br/><br/>
+                        </p>
+                     </div>
+                     <div style="clear: both;"></div>
+                  </div>
+               </div>
+               <div id="lista-panel" class="panel">
+                  <div>
+                     <div class="insidecontent">
+                        <br/>
+                        <h1>GLSL games/demos</h1>
+                        <p>
+                           <a class="olinks" href="https://github.com/danilw/godot-utils-and-other" title="" target="_blank">Particles game</a>,
+                           <a class="gllinks" href="https://danilw.github.io/small-2d-game/2dgamii.html" title="" target="_blank">Small 2d</a>,
+                           <a class="gllinks" href="https://danilw.github.io/GLSL-howto/goglsl/goglsl.html" title="" target="_blank">Getting Over...GLSL</a>,
+                           <a class="gllinks" href="https://danilw.github.io/Castle-game/ccgame.html" title="" target="_blank">Castle-game</a>,
+                           <a class="gllinks" href="https://danilw.github.io/cputests/wasm/sgame/best_wfix/sgame.html" title="" target="_blank">sgame</a>
+                        </p>
+                        <br/><br/>
+                        <h1>Other</h1>
+                        <p>
+                           <a class="olinks" href="https://danilw.github.io/cputests/wasm/render_mini/render_mini.html" title="" target="_blank">cputests</a>,
+                           <a class="olinks" href="https://danilw.github.io/WebGL-image-slider/v1/anim1/simple_slider_c.html" title="" target="_blank">WebGL-image-slider</a>,
+                           <a class="olinks" href="https://www.shadertoy.com/view/4dGBWy" title="" target="_blank">GLSL space ship</a>,
+                           <a class="olinks" href="https://danilw.github.io/GLSL-howto/nanogui/nanogui.html" title="" target="_blank">nanogui</a>
+                        </p>
+                        <br/><br/>
+                        <h1>Youtube videos</h1>
+                        <p>
+                           <a class="ytlinks" href="https://youtu.be/405yudjksDA" title="" target="_blank">Open GL demo</a>,
+                           <a class="ytlinks" href="https://youtu.be/lVCIEaFEMO4" title="" target="_blank">sgame</a>,
+                           <a class="ytlinks" href="https://youtu.be/lNXTFvTDOAo" title="" target="_blank">cgame</a>,
+                           <a class="ytlinks" href="https://youtu.be/zauOYUeD5Hs" title="" target="_blank">Small 2d</a>
+                           <a class="ytlinks" href="https://youtu.be/jTmppCifnYE" title="" target="_blank">Particles</a>
+                        </p>
+                     </div>
+                     <div style="clear: both;"></div>
+                  </div>
+               </div>
+               <!--
+                  <div id="thirdtab-panel" class="panel">
+                      <div>
+                          <div class="insidecontent"> <br/>
+                              <h1>Welcome</h1>
+                              <p>
+                                  links
+                              </p>
+                          </div>
+                          <div style="clear: both;"></div>
+                      </div>
+                  </div>
+                  -->
+            </div>
+         </div>
+         <div id="footer"> <span>Danil 2019+</span>
+         </div>
+      </div>
+   </body>
+</html>
