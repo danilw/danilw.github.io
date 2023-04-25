@@ -16,7 +16,7 @@ Look there for *Simple Combinations* such as - merge, intersect, subtract, and o
 
 Down below I use **merge operation**, that literally just `min(shape1, shape2);` so I use directly `min`.
 
-[2D distance functions](https://iquilezles.org/articles/distfunctions2d/) - this page has list of **more basic SDF shapes**, I use just Circle. If you need repetition of same shape - [hg_sdf](http://mercury.sexy/hg_sdf/), not used in this example.
+[2D distance functions](https://iquilezles.org/articles/distfunctions2d/) - this page has list of **more basic SDF shapes**, I use just Circle. If you need repetition of same shape - [hg_sdf](http://mercury.sexy/hg_sdf/).
 ___
 
 ## Content:
