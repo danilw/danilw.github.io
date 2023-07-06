@@ -8,3 +8,4 @@ ___
 - [Simple 2D SDF tutorial](simple_SDF_tutorial/README.md)
 - [Launching 619 thousand Tetris on GPU, their rendering, and a simple bot](Launching_619_thousand_Tetris_on_GPU/README.md)
 - [Decompiling and optimizing Nvidia shaders](decompiling_and_optimizing_nvidia_shaders/README.md)
+- [My shadertoy templates list](my_shader_templates_list/README.md)
