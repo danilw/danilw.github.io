@@ -163,7 +163,7 @@ Use texture-noise.
 Examples of how Hash and procedural Noise is non consistent:
 ============================================================
 
-Example 1--- City shader <https://www.shadertoy.com/view/Ntcyz7>
+Example 1 - City shader <https://www.shadertoy.com/view/Ntcyz7>
 --------------------------------------------------------------
 
 ![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/Ntcyz7_hash_bug.jpg)
@@ -206,7 +206,7 @@ Water is vibile broken on screenshot <https://www.shadertoy.com/view/Xc23DW>
 
 This screenshot from Nvidia-Vulkan.
 
-chrome.exe --use-angle=vulkan --enable-features=Vulkan,DefaultANGLEVulkan,VulkanFromANGLE
+`chrome.exe --use-angle=vulkan --enable-features=Vulkan,DefaultANGLEVulkan,VulkanFromANGLE`
 
 If you see same bug as on screenshot - look `#define USE_FIXED_FLOAT_RANGE_FIX_HASH`
 
