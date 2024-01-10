@@ -90,13 +90,15 @@ Notice - `#define FIX_FRACT_HASH` this is a "bad" fix I found to fix fract hash
 int-hash - there multiple shaders with good int-hash:
 -----------------------------------------------------
 
-1.  <https://www.shadertoy.com/view/WttXWX> - FabriceNeyret2 "Best" Integer Hash
-2.  <https://www.shadertoy.com/view/XlGcRh> - markjarzynski Comparing different hash functions for GPU Rendering. [Paper link.](http://www.jcgt.org/published/0009/03/02/)
+1.  <https://www.shadertoy.com/view/WttXWX> - FabriceNeyret2 "Best" Integer Hash\
+This hash made by **Chris Wellons - [ Prospecting for Hash Functions](https://nullprogram.com/blog/2018/07/31/)**.
+3.  <https://www.shadertoy.com/view/XlGcRh> - markjarzynski Comparing different hash functions for GPU Rendering. [Paper link.](http://www.jcgt.org/published/0009/03/02/)
 
 *Remember that int-hash is multiple times slower than fract-hash.*\
 If the source of random is float value - result of int-hash will be "non consistent" same as fract-hash so just use fract-hash.
 
 Example int-hash code from FabriceNeyret2 shader:
+*Hash by Chris Wellons -[ Prospecting for Hash Functions](https://nullprogram.com/blog/2018/07/31/).*
 
 ```c
 #define hashi(x)   lowbias32(x)
