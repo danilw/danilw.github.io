@@ -202,7 +202,7 @@ If you see same bug as on screenshot --- look `#define USE_FIXED_FLOAT_RANGE_F
 To test uint hash `#define TEST_UINT_HASH`\
 And to see more int-hash bugs `#define MORE_UINT_HASH_BUGS`
 
-![](ttps://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/Xc23DW_2.jpg)
+![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/Xc23DW_2.jpg)
 
 with `#define TEST_UINT_HASH and #define MORE_UINT_HASH_BUGS`
 
