@@ -1,5 +1,7 @@
 # Hash Noise in GPU Shaders
 
+Short summary of GPU-hash:
+
 ![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/XcjGWw_hash_info.jpg)
 
 Content:
