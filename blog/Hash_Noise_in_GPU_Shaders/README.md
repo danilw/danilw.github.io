@@ -68,18 +68,21 @@ fract hash - <https://www.shadertoy.com/view/4djSRW>
 
 Example of fract-hash:
 
-// not always needed, and not always fix\
+```c
+// not always needed, and not always fix
 // #define FIX_FRACT_HASH 1000.
 
-float hash12(vec2 p)\
-{\
-#ifdef FIX_FRACT_HASH\
-    p = sign(p)*(floor(abs(p))+floor(fract(abs(p))*FIX_FRACT_HASH)/FIX_FRACT_HASH);\
-#endif\
-    vec3 p3  = fract(vec3(p.xyx) * .1031);\
-    p3 += dot(p3, p3.yzx + 33.33);\
-    return fract((p3.x + p3.y) * p3.z);\
+float hash12(vec2 p)
+{
+#ifdef FIX_FRACT_HASH
+    p = sign(p)*(floor(abs(p))+floor(fract(abs(p))*FIX_FRACT_HASH)/FIX_FRACT_HASH);
+#endif
+    vec3 p3  = fract(vec3(p.xyx) * .1031);
+    p3 += dot(p3, p3.yzx + 33.33);
+    return fract((p3.x + p3.y) * p3.z);
 }
+
+```
 
 Notice - `#define FIX_FRACT_HASH` this is a "bad" fix I found to fix fract hash, look examples below, this fix is not always needed.\
 *Only if you actually have a bugged visual look that comes from a hash - you can try this fix.*
@@ -95,19 +98,22 @@ If the source of random is float value - result of int-hash will be "non consist
 
 Example int-hash code from FabriceNeyret2 shader:
 
-#define hashi(x)   lowbias32(x)\
+```c
+#define hashi(x)   lowbias32(x)
 #define hash(x)  ( float( hashi(x) ) / float( 0xffffffffU ) )
 
-//bias: 0.17353355999581582 ( very probably the best of its kind )\
-uint lowbias32(uint x)\
-{\
-    x ^= x >> 16;\
-    x *= 0x7feb352dU;\
-    x ^= x >> 15;\
-    x *= 0x846ca68bU;\
-    x ^= x >> 16;\
-    return x;\
+//bias: 0.17353355999581582 ( very probably the best of its kind )
+uint lowbias32(uint x)
+{
+    x ^= x >> 16;
+    x *= 0x7feb352dU;
+    x ^= x >> 15;
+    x *= 0x846ca68bU;
+    x ^= x >> 16;
+    return x;
 }
+
+```
 
 int-seed-hash:
 --------------
@@ -116,35 +122,38 @@ Use any int-hash and do instead of `uint x` as input - use `seed` that you g
 
 Example from Godot Particle shader code:
 
-float rand_from_seed(inout uint seed) {\
- int k;\
- int s = int(seed);\
- if (s == 0)\
- s = 305420679;\
- k = s / 127773;\
- s = 16807 * (s - k * 127773) - 2836 * k;\
- if (s < 0)\
-  s += 2147483647;\
- seed = uint(s);\
- return float(seed % uint(65536)) / 65535.0;\
+```c
+float rand_from_seed(inout uint seed) {
+ int k;
+ int s = int(seed);
+ if (s == 0)
+ s = 305420679;
+ k = s / 127773;
+ s = 16807 * (s - k * 127773) - 2836 * k;
+ if (s < 0)
+  s += 2147483647;
+ seed = uint(s);
+ return float(seed % uint(65536)) / 65535.0;
 }
 
-float rand_from_seed_m1_p1(inout uint seed) {\
- return rand_from_seed(seed) * 2.0 - 1.0;\
+float rand_from_seed_m1_p1(inout uint seed) {
+ return rand_from_seed(seed) * 2.0 - 1.0;
 }
 
-uint hash(uint x) {\
- x = ((x >> uint(16)) ^ x) * uint(73244475);\
- x = ((x >> uint(16)) ^ x) * uint(73244475);\
- x = (x >> uint(16)) ^ x;\
- return x;\
+uint hash(uint x) {
+ x = ((x >> uint(16)) ^ x) * uint(73244475);
+ x = ((x >> uint(16)) ^ x) * uint(73244475);
+ x = (x >> uint(16)) ^ x;
+ return x;
 }
 
-// correct usage:\
-// uint seed = hash(some_INDEX); // particle index for example\
-// float random_hash = rand_from_seed(seed);\
-//... latter in code\
+// correct usage:
+// uint seed = hash(some_INDEX); // particle index for example
+// float random_hash = rand_from_seed(seed);
+//... latter in code
 // float random_hash2 = rand_from_seed(seed);
+
+```
 
 Noise:
 ------
