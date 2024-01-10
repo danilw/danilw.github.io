@@ -1,3 +1,7 @@
+# Hash Noise in GPU Shaders
+
+![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/XcjGWw_hash_info.jpg)
+
 Content:
 --------
 
@@ -42,7 +46,7 @@ Link to [Summary-image](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/
 How broken sin-hash-noise:
 ==========================
 
-![](https://miro.medium.com/v2/resize:fit:700/1*ULUGUQ_3VxBKiQh451B6RQ.png)
+![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/stK3WG_comp.png)
 
 fract-hash noise on left, right is sin-hash-noise <https://www.shadertoy.com/view/stK3WG>
 
@@ -151,7 +155,7 @@ Examples of how Hash and procedural Noise is non consistent:
 Example 1--- City shader <https://www.shadertoy.com/view/Ntcyz7>
 --------------------------------------------------------------
 
-![](https://miro.medium.com/v2/resize:fit:700/1*jaeWyTdKDn6K2BxAx1TkAw.png)
+![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/Ntcyz7_hash_bug.jpg)
 
 <https://www.shadertoy.com/view/Ntcyz7>
 
@@ -170,7 +174,7 @@ Fix --- just forsing all calls to `get_heightField` to be on GPU by adding `
 Replacing fract-hash with int-hash --- bug still here:
 ----------------------------------------------------
 
-![](https://miro.medium.com/v2/resize:fit:700/1*UJF7u4-D35WHPZ_AWlgvVw.png)
+![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/Ntcyz7_Uhash_bug.jpg)
 
 same bug with int-hash <https://www.shadertoy.com/view/Ntcyz7>
 
@@ -185,7 +189,7 @@ Example 2 --- Rough Seas shader <https://www.shadertoy.com/view/Xc23DW>
 *Note --- I use the Rough Seas shader to show bug in my fork of original.*\
 Original by Dave_Hoskins --- <https://www.shadertoy.com/view/dtXGW4>
 
-![](https://miro.medium.com/v2/resize:fit:700/1*eXpl8vR8XeUxyv4ces0gzQ.jpeg)
+![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/Xc23DW_1.jpg)
 
 Water is vibile broken on screenshot <https://www.shadertoy.com/view/Xc23DW>
 
@@ -198,7 +202,7 @@ If you see same bug as on screenshot --- look `#define USE_FIXED_FLOAT_RANGE_F
 To test uint hash `#define TEST_UINT_HASH`\
 And to see more int-hash bugs `#define MORE_UINT_HASH_BUGS`
 
-![](https://miro.medium.com/v2/resize:fit:700/1*s4eG1PTvbj-exxf_szhOCw.jpeg)
+![](ttps://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/Xc23DW_2.jpg)
 
 with `#define TEST_UINT_HASH and #define MORE_UINT_HASH_BUGS`
 
