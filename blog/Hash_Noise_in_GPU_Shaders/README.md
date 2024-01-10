@@ -42,7 +42,7 @@ For something like a height-map - use texture to have the same height-map on eve
 Texture as noise - is best noise.\
 Because you can pre-generate very complex noise instead of *waiting for real-time procedural-noise generation,* which will be much slower than reading a pre-generated texture pixel.
 
-Link to [Summary-image](https://www.shadertoy.com/view/XcjGWw).
+Link to [Summary-image](https://www.shadertoy.com/view/4fsSRn).
 -----------------------------------------------------------------------------------------------------------------
 
 How broken sin-hash-noise:
