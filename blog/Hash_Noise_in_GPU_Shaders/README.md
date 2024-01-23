@@ -8,7 +8,7 @@ Content:
 --------
 
 1.  Short notes-some info about image with information.
-2.  **Main reason** why fract-hash is inconsistent on GPU.
+2.  **Main reason** why result of fract-hash is not same on GPU compare to CPU.
 3.  How broken sin-hash.
 4.  Good GPU-hash-functions links.
 5.  Two examples of how GPU hash and noise is non-consistent.
@@ -46,7 +46,7 @@ Because you can pre-generate very complex noise instead of *waiting for real-ti
 Link to [Summary-image](https://www.shadertoy.com/view/4fsSRn).
 -----------------------------------------------------------------------------------------------------------------
 
-Main reason why fract-hash is inconsistent on GPU:
+Main reason why result of fract-hash is not same on GPU compare to CPU:
 =============================
 
 Because result of:
@@ -59,9 +59,9 @@ floor((900./37.)*1000.)/1000. // = 24.323999
 floor((900./37.+min(iTime,0.))*1000.)/1000. // = 24.324001
 ```
 
-is 24.323999 on CPU and 24.324001 on GPU
+Result of `floor((900./37.)*1000.)/1000.` is 24.323999 on CPU and 24.324001 on GPU.
 
-This lead to huge inconsistensy in GPU-fract-hash.
+And use of fract-hash just explode difference.
 
 Look this shader https://www.shadertoy.com/view/mdfSz8
 
