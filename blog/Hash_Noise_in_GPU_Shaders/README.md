@@ -8,10 +8,11 @@ Content:
 --------
 
 1.  Short notes-some info about image with information.
-2.  How broken sin-hash.
-3.  Good GPU-hash-functions links.
-4.  Two examples of how GPU hash and noise is non-consistent.
-5.  Links to gifs hash-Bugs-comparison.
+2.  **Main reason** why fract-hash is inconsistent on GPU.
+3.  How broken sin-hash.
+4.  Good GPU-hash-functions links.
+5.  Two examples of how GPU hash and noise is non-consistent.
+6.  Links to gifs hash-Bugs-comparison.
 
 Short notes to Summary-image:
 =============================
@@ -44,6 +45,27 @@ Because you can pre-generate very complex noise instead of *waiting for real-ti
 
 Link to [Summary-image](https://www.shadertoy.com/view/4fsSRn).
 -----------------------------------------------------------------------------------------------------------------
+
+Main reason why fract-hash is inconsistent on GPU:
+=============================
+
+Because result of:
+
+```c
+// CPU
+floor((900./37.)*1000.)/1000. // = 24.323999
+
+// GPU
+floor((900./37.+min(iTime,0.))*1000.)/1000. // = 24.324001
+```
+
+is 24.323999 on CPU and 24.324001 on GPU
+
+This lead to huge inconsistensy in GPU-fract-hash.
+
+Look this shader https://www.shadertoy.com/view/mdfSz8
+
+-----------------------------------------
 
 How broken sin-hash-noise:
 ==========================
