@@ -106,6 +106,11 @@ float hash12(vec2 p)
 
 ```
 
+![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/4fSXDd.png)
+
+*Example of broken fract hash* https://www.shadertoy.com/view/4fSXDd *or* https://www.shadertoy.com/view/lcBSWd
+
+
 Notice - `#define FIX_FRACT_HASH` this is a "bad" fix I found to fix fract hash, look examples below, this fix is not always needed.\
 *Only if you actually have a bugged visual look that comes from a hash - you can try this fix.*
 
