@@ -63,7 +63,7 @@ Result of `floor((900./37.)*1000.)/1000.` is 24.323999 on CPU and 24.324001 on G
 
 And use of fract-hash just explode difference.
 
-Look this shader https://www.shadertoy.com/view/mdfSz8
+Look this shader [https://www.shadertoy.com/view/mdfSz8](https://www.shadertoy.com/view/mdfSz8)
 
 -----------------------------------------
 
@@ -108,7 +108,7 @@ float hash12(vec2 p)
 
 ![](https://danilw.github.io/GLSL-howto/vulkan_sh_launcher/images_bugs/4fSXDd.png)
 
-*Example of broken fract hash* https://www.shadertoy.com/view/4fSXDd *or* https://www.shadertoy.com/view/lcBSWd
+*Example of broken fract hash* [https://www.shadertoy.com/view/4fSXDd](https://www.shadertoy.com/view/4fSXDd) *or* [https://www.shadertoy.com/view/lcBSWd](https://www.shadertoy.com/view/lcBSWd)
 
 
 Notice - `#define FIX_FRACT_HASH` this is a "bad" fix I found to fix fract hash, look examples below, this fix is not always needed.\
