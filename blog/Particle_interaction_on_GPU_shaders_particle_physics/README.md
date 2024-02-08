@@ -319,22 +319,24 @@ Every tree is particle with logic.
 
 *Particle-collision logic code in *[*particles_fbo_logic.shader*](https://github.com/danilw/flat-maze/blob/master/flat_maze/shaders/scene2/particles_fbo_logic.shader)
 
-// data\
-// in [x,y,z,w]\
-// x-posx\
-// y-posy\
-// z-0xffff-velx, 0xff-data\
+```c
+// data
+// in [x,y,z,w]
+// x-posx
+// y-posy
+// z-0xffff-velx, 0xff-data
 // w-0xffff-vely, 0xff-data
 
-//in data(0x[ffff]) stored:\
-//[its type][its HP]\
-// HP-values 0-0xff when HP==0 types go down\
-// type:\
-// 1-2 ghost\
-// 3-zombi\
-// 4-18 blocks\
-// +20 is on fire\
+//in data(0x[ffff]) stored:
+//[its type][its HP]
+// HP-values 0-0xff when HP==0 types go down
+// type:
+// 1-2 ghost
+// 3-zombi
+// 4-18 blocks 
+// +20 is on fire
 // 40 is bullet(right) 41 left 42 top 43 down
+```
 
 To fix "jittering":
 -------------------
