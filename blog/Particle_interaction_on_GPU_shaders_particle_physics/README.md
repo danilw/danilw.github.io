@@ -313,7 +313,7 @@ Main features/difference from Shadertoy shader logic:
 2.  *"Action ID"* logic - particles on collision "generate action" based on the type of object they collide with.
 3.  Timers for particles are used for "burning/turn" trees to other type.
 
-![](https://miro.medium.com/v2/resize:fit:700/0*jemMSSPBfmxCj-xv.jpg)
+![](img/11.webp)
 
 Every tree is particle with logic.
 
@@ -357,7 +357,7 @@ Logic:
 
 I do use "Action ID" logic - but I do not store actions.
 
-![](img/11.webp)
+![](img/12.webp)
 
 Search for `need_upd` [in shader code](https://github.com/danilw/flat-maze/blob/master/flat_maze/shaders/scene2/particles_fbo_logic.shader#L481).
 
@@ -459,6 +459,6 @@ Links to related text-information:
 3.  If you look for references - [Fast collision detection using the A-buffer](https://www.researchgate.net/publication/225595781_Fast_collision_detection_using_the_A-buffer).\
     In this document, look for references at the end.
 
-![](img/12.webp)
+![](img/13.webp)
 
 The end, thanks for reading. Really hope some information from this blog is useful for you.
