@@ -221,6 +221,8 @@ Limitations of WebGL2 implementation:
 Rasterisation-rendering implementation:
 =======================================
 
+[![](img/20.png)](https://youtu.be/fRu9PA4XHPQ)
+
 particle_self_collision at <https://github.com/danilw/godot-utils-and-other>
 
 Links:
@@ -294,6 +296,8 @@ Creating/rendering hundreds of thousands of rasterisation-particles will be more
 
 Game example:
 =============
+
+[![](img/21.png)](https://youtu.be/HawWnuMn1mc)
 
 Links:
 ------
@@ -396,6 +400,8 @@ Also - [Voronoï particle tracking](https://www.shadertoy.com/view/3ty3Dy).
 
 Also - more complex logic for "particle communication" like water physics.\
 Even light-tracing can be presented as logic for particle communication.
+
+[![](img/22.png)](https://mastodon.gamedev.place/@danil/108113915783247736)
 
 <https://www.shadertoy.com/view/NlScDz>
 
