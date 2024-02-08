@@ -391,6 +391,14 @@ Because you can read/save any size of data without being limited, like in WebGL2
 Then move action-logic to the sorting shader, or even to its own shader that will read sorting-shader-result by "particle ID".\
 And for "general compute-shader optimization" - is better to have action-logic in its own shader.
 
+#### Short note about interaction with the player:
+
+Particles also calculate collisions with the SDF-buffer, and player draw a small circle around self in this SDF buffer.
+
+And to know player HP when monsters collide with player:\
+Player read 6x6 square around self location in particle-collision-buffer and check particles-type it collides with.\
+If its a tree, player HP remains constant, if its a monster ID, player HP decreases.
+
 More advanced techniques and more examples:
 ===========================================
 
