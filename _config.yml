@@ -1,5 +1,6 @@
 title: danilw.github.io
 description: Projects and blogs links.
+show_downloads: false
 google_analytics:
 remote_theme: pages-themes/merlot@v0.2.0
 plugins:
