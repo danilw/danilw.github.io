@@ -165,6 +165,9 @@ STL is Always bad! (smaller arrays and less array read/write is always better)
 
 *But STL not always bad! (not always the main source of slowdown)*
 
+**Update 2024 ** -  STL is always bad, but only on Nvidia.\
+*I tested [stl-slowdown shader](https://www.shadertoy.com/view/cdB3WG) on Nvidia 4060 RTX - and it show 2fps on STL side.*
+
 Remember that if you have huge-shader with lots of branches and use arrays --- because in shader everything unrolled you can have thousands of STL as result, but shader will work very fast.
 
 Example of shader like this and to test---my shader [GLSL Auto Tetris](https://www.shadertoy.com/view/3dlSzs).\
