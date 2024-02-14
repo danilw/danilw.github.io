@@ -104,7 +104,7 @@ Only when code in each shader is unique:
 -   `object00005.nvuc` is `shaders/shadertoy/main_image.glsl`
 -   `object00006.nvuc` is `shaders/src/main.vert`
 
-*But when shader code is the same *--- shaders will be compiled into a single `*.nvuc` file.
+*But when shader code is the same* --- shaders will be compiled into a single `*.nvuc` file.
 
 For example, in download [*vulkan-shadertoy-launcher_linux.zip*](https://github.com/danilw/vulkan-shadertoy-launcher/releases) used [*this shadertoy shader*](https://www.shadertoy.com/view/WlcBWr).\
 Every Buffer shader and Image shader in this Shadertoy *is unique *---* file order will follow my listed order above*.*\
@@ -165,7 +165,7 @@ STL is Always bad! (smaller arrays and less array read/write is always better)
 
 *But STL not always bad! (not always the main source of slowdown)*
 
-**Update 2024 ** -  STL is always bad, but only on Nvidia.\
+**Update 2024** -  STL is always bad, but only on Nvidia.\
 *I tested [stl-slowdown shader](https://www.shadertoy.com/view/cdB3WG) on Nvidia 4060 RTX - and it show 2fps on STL side.*
 
 Remember that if you have huge-shader with lots of branches and use arrays --- because in shader everything unrolled you can have thousands of STL as result, but shader will work very fast.
@@ -194,7 +194,7 @@ I use `int[220]` to store 220 bits, so *seven uints* is enough to store it.
 Look Common on linked Shadertoy shader --- line 11 `#define use_uint_map`\
 *Uncomment this define to use new map.*
 
-I see about 5x speedup *(in OpenGL)*--- if you set `#define AI 0` in Common to test maximum shader load.\
+I see about 5x speedup *(in OpenGL)* --- if you set `#define AI 0` in Common to test maximum shader load.\
 *In Vulkan --- I think about ~2 times faster from using smaller array.*
 
 Analyze and optimize neural(ML) shaders:
