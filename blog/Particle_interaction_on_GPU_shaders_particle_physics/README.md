@@ -427,13 +427,14 @@ Links to complex examples in Shadertoy shaders:
 
 1.  <https://www.shadertoy.com/view/WtfyDj> - Liquid by Mykhailo Moroz.\
     *Check *[*Mykhailo Moroz blog*](https://michaelmoroz.github.io/Reintegration-Tracking/)*.*
-2.  <https://www.shadertoy.com/view/dstfR2> - Solid and Liquid by wyatt.\
+2.  <https://www.shadertoy.com/view/Wl2yWm > - Stellar evolution by Mykhailo Moroz.
+3.  <https://www.shadertoy.com/view/dstfR2> - Solid and Liquid by wyatt.\
     *Look other wyatt shaders - there many shaders related to particles.*
-3.  <https://www.shadertoy.com/view/WlVyRV> - Dry ice 2 by xjorma.\
+4.  <https://www.shadertoy.com/view/WlVyRV> - Dry ice 2 by xjorma.\
     *Smoke-like in 3d-plane.*
-4.  <https://www.shadertoy.com/view/NtcBzX> - Candy Mixer by fenix.
-5.  <https://www.shadertoy.com/view/cdlXDH> - Gummy Worm by fenix.
-6.  <https://www.shadertoy.com/view/fld3R4> - Light Propagation by paniq.\
+5.  <https://www.shadertoy.com/view/NtcBzX> - Candy Mixer by fenix.
+6.  <https://www.shadertoy.com/view/cdlXDH> - Gummy Worm by fenix.
+7.  <https://www.shadertoy.com/view/fld3R4> - Light Propagation by paniq.\
     *There no "collision" happening, just as idea of light as particle.*
 
 Very complex solid/soft-bodies:
