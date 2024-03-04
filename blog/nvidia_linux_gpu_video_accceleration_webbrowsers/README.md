@@ -29,7 +29,7 @@ export MOZ_DISABLE_RDD_SANDBOX=1
 ```
 6. Firefox - open in Firefox page `about:config` and follow:
 ![](0.png)
-7. It should work, to confirm - look `nvidia-settings`, and to know `nvidia-vaapi-driver` works - `vainfo`, look my screenshot below.
+7. It should work, to confirm - look `nvidia-settings`, and to know *nvidia-vaapi-driver* works - `vainfo`, look my screenshot below.
 8. For more information look oritinal instructions on https://github.com/elFarto/nvidia-vaapi-driver 
 
 ___
