@@ -21,6 +21,7 @@ ___
 4. In *nvidia-vaapi-driver* directory - `meson setup build` and `meson install -C build` - to install you need root password.
 5. Add to boot parameters to kernel `nvidia-drm.modeset=1`, in OpenSuSe it - `/sbin/yast2 bootloader` second tab "kernel parameters" and aditional parameters line there.
 6. Environment Variables - edit `~/.profile` text file, add:
+
 ```
 export NVD_BACKEND=direct
 export LIBVA_DRIVER_NAME=nvidia
@@ -28,6 +29,7 @@ export LIBVA_DRIVER_NAME=nvidia
 export MOZ_X11_EGL=1
 export MOZ_DISABLE_RDD_SANDBOX=1
 ```
+
 6. Firefox - open in Firefox page `about:config` and follow:
 ![](0.png)
 7. It should work, to confirm - look `nvidia-settings`, and to know *nvidia-vaapi-driver* works - `vainfo`, look my screenshot below.
