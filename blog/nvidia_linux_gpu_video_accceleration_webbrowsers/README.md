@@ -55,8 +55,10 @@ When minimal `GPU 210MHz  MEM 405MHz`.
 And when I play video in webbrowser on CPU-decoding, no GPU-acceleration - GPU stay on lowest level.
 
 For this 4060 GPU - max power usage by GPU is 115Watt.\
-Because GPU forced to P2 for CUDA-video-decoding, P2 is 40-60% power usage.
+Because GPU forced to P2 for CUDA-video-decoding, P2 is 40-60% power usage.\
 Means GPU just wasting about 40Watt to decode video.
+
+*Just waste* - I mean GPU boosted to 40-60% of performance and use 1-2% of this performance to actualy decode video, 1-2% you can see in `nvidia-settings`.
 
 When CPU I use is 65Watt CPU and it uses 20% of performance to decode 720p-1080p videos.\
 20% of 65Watt is 13Watt.
@@ -81,10 +83,10 @@ ___
 
 Use of Nvidia video-decoding hardware acceleration in Linux webbrowser is not worth it.
 
-For desktop-video players - like mpv - maybe for 4k videos it worth it.\
+For desktop-video players - like mpv - **maybe for 4k videos it worth it**.\
 Because when I tested 4k video on CPU-decoding use about 60% of CPU performance, plus forced GPU to P1 I think because PCIE-speed-utilisation for 4k video.
 
-Obviously GPU-encoding worth using, it much faster on GPU to encode video, but GPU-video-decode is not.
+*Obviously GPU-encoding worth using, it much faster on GPU to encode video, but GPU-video-decode is not.*
 
 *Atleast until Nvidia add exception to not force P2 for video decode.*
 
