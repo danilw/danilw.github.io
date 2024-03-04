@@ -7,7 +7,7 @@ ___
 
 ## Does it work, in webbrowser:
 
-Yes. Only in Firefox.
+Yes. **Only in Firefox.**
 
 Go to [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) - build and install it, and follow instruction to make hardware video acceleration work.
 
@@ -52,6 +52,7 @@ Quote:
 
 > nvdec requires cuda, and cuda forces the GPU into at least the P2 state, while the actually hardware decoding works fine at P5. Both VDPAU and Vulkan video decode demonstrate this - they use the same video decoding hardware but don't force the power state to increase.
 
+___
 
 ## Conclusion:
 
