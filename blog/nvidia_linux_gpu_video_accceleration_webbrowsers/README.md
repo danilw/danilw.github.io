@@ -82,7 +82,7 @@ ___
 ## Conclusion:
 
 Use of Nvidia video-decoding hardware acceleration in Linux webbrowser is not worth it.\
-For reason - Nvidia force GPU-clocks/perfor5mance to P2.
+For reason - Nvidia force GPU-clocks/performance to P2.
 
 For desktop-video players - like mpv - **maybe for 4k videos it worth it**.\
 Because when I tested 4k video on CPU-decoding use about 60% of CPU performance, plus forced GPU to P1 I think because PCIE-speed-utilisation for 4k video.
