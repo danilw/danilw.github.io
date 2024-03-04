@@ -16,10 +16,10 @@ ___
 ## Short insrtuction to `nvidia-vaapi-driver`:
 
 1. `git clone https://github.com/elFarto/nvidia-vaapi-driver`
-2. install in your package manager, names in OpenSuSe package manager:\
+2. Install in your package manager, names in OpenSuSe package manager:\
     `meson` and `ffnvcodec-devel` and `gstreamer-plugins-bad` and `streamer-plugins-bad-devel`
-4. in *nvidia-vaapi-driver* directory - `meson setup build` and `meson install -C build` - to install you need to type root password
-5. add to boot parameters to kernel `nvidia-drm.modeset=1`, in OpenSuSe it - `/sbin/yast2 bootloader` second tab "kernel parameters" and aditional parameters line there.
+4. In *nvidia-vaapi-driver* directory - `meson setup build` and `meson install -C build` - to install you need root password.
+5. Add to boot parameters to kernel `nvidia-drm.modeset=1`, in OpenSuSe it - `/sbin/yast2 bootloader` second tab "kernel parameters" and aditional parameters line there.
 6. Environment Variables - edit `~/.profile` text file, add:
 ```
 export NVD_BACKEND=direct
