@@ -11,6 +11,29 @@ Yes. **Only in Firefox.**
 
 Go to [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) - build and install it, and follow instruction to make hardware video acceleration work.
 
+___
+
+## Short insrtuction to `nvidia-vaapi-driver`:
+
+1. `git clone https://github.com/elFarto/nvidia-vaapi-driver`
+2. install in your package manager, names in OpenSuSe package manager - `meson` and `ffnvcodec-devel` and `gstreamer-plugins-bad` and `streamer-plugins-bad-devel`
+3. in *nvidia-vaapi-driver* directory - `meson setup build` and `meson install -C build` - to install you need to type root password
+4. add to boot parameters to kernel `nvidia-drm.modeset=1`, in OpenSuSe it - `/sbin/yast2 bootloader` second tab "kernel parameters" and aditional parameters line there.
+5. Environment Variables - edit `~/.profile` text file, add:
+```
+export NVD_BACKEND=direct
+export LIBVA_DRIVER_NAME=nvidia
+
+export MOZ_X11_EGL=1
+export MOZ_DISABLE_RDD_SANDBOX=1
+```
+6. Firefox - open in Firefox page `about:config` and follow:
+![](0.png)
+7. It should work, to confirm - look `nvidia-settings`, and to know `nvidia-vaapi-driver` works - `vainfo`, look my screenshot below.
+8. For more information look oritinal instructions on https://github.com/elFarto/nvidia-vaapi-driver 
+
+___
+
 If you do everything correctly - when playing video in webbrowser youl see `Video Engine Utilization %`. 
 
 ![](1.png)
