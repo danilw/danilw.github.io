@@ -27,6 +27,7 @@ Debug:
 - [GPU-my-list-of-bugs](https://github.com/danilw/GPU-my-list-of-bugs)
 - [Decompiling and optimizing Nvidia shaders](decompiling_and_optimizing_nvidia_shaders/README.md)
 - [Investigating PCIE usage in nanovg_vulkan](Vulkan-PCIE-band-vs-OGL/README.md)
+- [Nvidia Linux GPU video decoding-acceleration in webbrowsers - does it work, and is it worth it](nvidia_linux_gpu_video_accceleration_webbrowsers/README.md)
 
 ___
 
