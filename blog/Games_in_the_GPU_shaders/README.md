@@ -106,6 +106,9 @@ Antialiasing:
     [Anti-Aliasing Compare](https://www.shadertoy.com/view/4dGXW1) --- comparison of MSAA methods.\
     Most default Shadertoy MSAA template:\
     (rename original *mainImage* to *mainImage_orig*)
+4.  Optimized multisampling - in addition to *Anti-Aliasing Compare* above - there also interesting [Temporal AA that use just 1 buffer](https://www.shadertoy.com/view/DsfGWX).\ 
+    And [Easy adaptive sampling for for Shadertoy use case only](https://www.shadertoy.com/view/Xc2XDd) - can be faster than SSAA but it may be still bad for complex geometry because 2x2 pixel-group.
+5.  **My shaders where I use antialiasing** as example - [*Cube lines* - texture AA by dFd](https://www.shadertoy.com/view/NslGRN), [*Moving around scene with TAA* - 3d TAA](https://www.shadertoy.com/view/DdSBDy), [*Too much repetition* - VXAA+basic TAA](https://www.shadertoy.com/view/McGGz1).
 ```
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
