@@ -106,8 +106,9 @@ Antialiasing:
     [Anti-Aliasing Compare](https://www.shadertoy.com/view/4dGXW1) --- comparison of MSAA methods.\
     Most default Shadertoy MSAA template:\
     (rename original *mainImage* to *mainImage_orig*)
-4.  Optimized multisampling - in addition to *Anti-Aliasing Compare* above - there also interesting [Temporal AA that use just 1 buffer](https://www.shadertoy.com/view/DsfGWX). And [Easy adaptive sampling for for Shadertoy use case only](https://www.shadertoy.com/view/Xc2XDd) - can be faster than SSAA but it may be still bad for complex geometry because 2x2 pixel-group.
-5.  **My shaders where I use antialiasing** as example - [*Cube lines*](https://www.shadertoy.com/view/NslGRN) - texture AA by dFd, [*Moving around scene with TAA*](https://www.shadertoy.com/view/DdSBDy) - 3d TAA, [*Too much repetition*](https://www.shadertoy.com/view/McGGz1) - VXAA+basic TAA.
+4.  Look [**A Quick Overview of MSAA**](https://mynameismjp.wordpress.com/2012/10/24/msaa-overview/) blog written by MJP.
+5.  Optimized multisampling - in addition to *Anti-Aliasing Compare* above - there also interesting [Temporal AA that use just 1 buffer](https://www.shadertoy.com/view/DsfGWX). And [Easy adaptive sampling for for Shadertoy use case only](https://www.shadertoy.com/view/Xc2XDd) - can be faster than SSAA but it may be still bad for complex geometry because 2x2 pixel-group.
+6.  **My shaders where I use antialiasing** as example - [*Cube lines*](https://www.shadertoy.com/view/NslGRN) - texture AA by dFd, [*Moving around scene with TAA*](https://www.shadertoy.com/view/DdSBDy) - 3d TAA, [*Too much repetition*](https://www.shadertoy.com/view/McGGz1) - VXAA+basic TAA.
 ```
 void mainImage(out vec4 fragColor, in vec2 fragCoord)
 {
