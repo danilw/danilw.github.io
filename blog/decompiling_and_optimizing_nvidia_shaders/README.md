@@ -13,10 +13,23 @@ This is my tutorial/note for Linux, but it works very similar way on Windows, lo
 
 Look *example-usage* and *shader-optimization* at the end.
 
+---
+
+### Update 2024:
+
+*Nvidia changed binary format of Vulkan shaders — [**check this**](https://github.com/therontarigo/nvcachetools/issues/1) for more info.*\
+*nvcachetools works with new change, but check link above if it does not.*\
+*Tested on Nvidia 4060 on 550 Nvidia drivers.*
+
+---
+
 > [nvcachetools](https://github.com/therontarigo/nvcachetools) --- It extracts shaders from specificied cache toc file, normally in `$HOME/.nv/GLCache/` Nvidia driver puts shaders here regardless of API, both Vulkan and OpenGL.\
 > Shader can be decompiled with [nvdisasm](https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html#nvdisasm) ( - binary option) or with this open-source disassembler [envytools](https://envytools.readthedocs.io/en/latest/envydis/index.html) if you have Maxwell or one of the older GPU it supports.
 
 Detailed instruction and example use cases below.
+
+**Note** — default cache folder `~/.nv/GLCache` may not exist so cache files not saved, create this folder manualy.\
+Or `export __GL_SHADER_DISK_CACHE_PATH=<path>`
 
 Tools
 =====
@@ -33,11 +46,16 @@ Short instruction
     or `object00001.nvuc` or other number\
     Look *Advanced usage --- File names* below.
 3.  `./envydis -i -mgm107 sections/section4_0001.bin`\
-    or `/usr/local/cuda-11.8/bin/nvdisasm --binary SM87 objs/object00000.nvuc`
+    or `/usr/local/cuda/bin/nvdisasm --binary SM89 objs/object00000.nvuc`
 
 ![](images/2.png)
 
-nvdisasm output for Shadertoy New shader
+*nvdisasm output for Shadertoy New shader for SM50 — Maxwell architecture Nvidia 750*
+
+![](images/2_1.png)
+
+*nvdisasm output for Shadertoy New shader for SM89 — Ada Lovelace architecture Nvidia 4060*
+
 
 Instruction
 ===========
