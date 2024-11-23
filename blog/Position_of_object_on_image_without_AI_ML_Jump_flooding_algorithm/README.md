@@ -42,11 +42,14 @@ it is possible to do in real time — that will cost 10–16 “compute-laye
 ### Optimized realtime JFA:
 
 [**Van Damme — Distance**](https://www.shadertoy.com/view/Wl3fWX) **—** by Flyguy on Shadertoy.
+
 It better for real time use — because there only:
 
-    for(int i = \-1; i <= 1; i++)
+```
+    for(int i = -1; i <= 1; i++)
     {
-        for(int j = \-1; j <= 1; j++)
+        for(int j = -1; j <= 1; j++)
+```
 
 And only 6-passes — used single cubemap buffer and every cube-face look on other-previous cube fase to build JFA.
 _(this why it delayed by 6 frames from video — can be improved by procesing 6 buffers one after other)_
