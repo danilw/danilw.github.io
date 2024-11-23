@@ -19,6 +19,7 @@ Small/simple:
 - [Into Shadertoy and Shaders useful links and tips](Into_Shadertoy_and_Shaders_useful_links_and_tips/README.md)
 - [Simple 2D SDF tutorial](simple_SDF_tutorial/README.md)
 - [Cubemap GLSL shader debug functions](Cubemap_GLSL_shader_debug_functions/README.md)
+- [Position of object on image without AI/ML - Jump flooding algorithm](Position_of_object_on_image_without_AI_ML_Jump_flooding_algorithm/README.md)
 
 ___
 
