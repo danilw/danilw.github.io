@@ -2,7 +2,7 @@
 
 ### Position of object on image without AI/ML — Jump flooding algorithm
 
-![](1.png)
+![](1.jpg)
 
 Image-mask to distance field and display normals of SDF
 
@@ -60,7 +60,7 @@ Screenshot on top of this article is from this implementation — screenshot
 
 * * *
 
-![](2.png)
+![](2.jpg)
 
 Example of possible Mipmap use case in JFA.
 
