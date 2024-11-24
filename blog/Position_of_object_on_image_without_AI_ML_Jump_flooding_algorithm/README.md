@@ -90,13 +90,16 @@ I think Mipmaps can be used in JFA to find object bound-box, to get center-posit
 
 * * *
 
+![](3.jpg)
+
 ### Object detection using only Mipmap layer:
 
 #### Notice:
 
 [**FabriceNeyret2 blog — GPmipmap Mipmap Advanced tricks**](https://shadertoyunofficial.wordpress.com/2021/03/09/advanced-tricks/)**.**
 
-Cotext — [**dynamic centering Britney**](https://www.shadertoy.com/view/XfdcWj) _FabriceNeyret2 Shadertoy shader_.
+Cotext — [**dynamic centering Britney**](https://www.shadertoy.com/view/XfdcWj) _FabriceNeyret2 Shadertoy shader_.\
+And — [**tracking van damme(almost free)2**](https://www.shadertoy.com/view/XlcyR2).
 
 Look at this implementation — used only Mipmap layer to get position of mask.
 
