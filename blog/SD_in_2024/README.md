@@ -262,7 +262,7 @@ More examples of Animatediff look - https://github.com/Kosinkadink/ComfyUI-Anima
 
 **Result of this from 8GB GPU:**\
 [AnimateDiff_00010.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00010.mp4) [AnimateDiff_00017.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00017.mp4)
-[AnimateDiff_00019.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00019.mp4) [AnimateDiff_00032.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00032.mp4) [AnimateDiffturbovision_00007.webm](https://danilw.github.io/blog/SD_in_2024/imgdat/aaa_readme_00003.mp4) [AnimateDiffturbovision_00007.webm](https://danilw.github.io/blog/SD_in_2024/imgdat/aaa_readme_00003.mp4)
+[AnimateDiff_00019.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00019.mp4) [AnimateDiff_00032.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00032.mp4) [AnimateDiffturbovision_00007.webm](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiffturbovision_00007.webm) [aaa_readme_00003.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/aaa_readme_00003.mp4)
 
 https://github.com/user-attachments/assets/0b63681d-4e4e-457f-bf89-27479d6f5727
 
@@ -305,7 +305,7 @@ ___
 **animationbetter1.5**:
 - `1.5_animatelcm-from-image.json` - AnimateDiff_00010.mp4 made with it
 - `1.5_animdiff_LOOP_bw_LOGO.json` - AnimateDiff_00033.mp4 made with it and AnimateDiff_00035.mp4
-- `1.5_animdiff_LOOP_single_text_WATER.json` - WaterDiff generated with it (logo) - notice how much different quality compare to just animdiff mode - this need its own model to have this good result. Original was deleted but closes to it linked in *Text/Logo Animation* section above.
+- `1.5_animdiff_LOOP_single_text_WATER.json` - WaterDiff generated with it (logo) - notice how much different quality compare to just animdiff mode - this need its own model to have this good result. Original was deleted but closest to it linked in *Text/Logo Animation* section above.
 - `1.5-simple-animatediff.json` - aaa_readme_00003.mp4 - simplest workflow
 - animatelcm-motion-brush.json` - final_00002.mp4 water motion brush. Oriignal was deleted, closes to it [Motion Brush1](https://openart.ai/workflows/mayfly_expensive_61/motion-brush-replica-using-grounding-dino/ed6YDEeDbSpX8D9Q0wwl) [motion brush2](https://openart.ai/workflows/sparrow_circular_79/stable-dynamic-wallpapermotion-brushv2/2KRklDVxFZtpOrRdaIp7)
 
