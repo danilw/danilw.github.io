@@ -47,7 +47,7 @@ SDXL - work on GPU with 8Gb.
 
 On 4060RTX with 8Gb I have:\
 10it/s on SD 1.5 - less than 1 sec per 512x512 image\
-and 1.7it/s on SDXL - about 10 sec per 1024x1024 image\
+and 1.7it/s on SDXL - about 10 sec per 1024x1024 image
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 [github.com/comfyanonymous/ComfyUI](https://github.com/comfyanonymous/ComfyUI) - install this, instruction there works and simple.
 
-As first step - go to [github.com/comfyanonymous/ComfyUI](https://comfyanonymous.github.io/ComfyUI_examples/) and load workflow.\
+As first step - go to [ComfyUI_examples](https://comfyanonymous.github.io/ComfyUI_examples/) and load workflow.\
 *Note* - For SDXL - you can apply refiner or XL-lora to any XL model.
 
 *Example:*
