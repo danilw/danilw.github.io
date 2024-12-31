@@ -9,7 +9,7 @@ System with (Nvidia) 4060 8GB GPU 16GB RAM and 32GB.
 
 ___
 
-# This is not tutorial - if you look for tutorials - search in the internet
+### This is not tutorial - if you look for tutorials - search in the internet
 
 ___
 
@@ -29,9 +29,9 @@ Basic ComfyUI workflow-examples is on ComfyUI github page.
 
 **Biggest portals to search ComfyUI-workflow and models/lora/etc is:**
 
-- https://civitai.com
-- https://openart.ai/workflows/home
-- https://comfyworkflows.com/
+- (civitai.com)[https://civitai.com]
+- (openart.ai/workflows)[https://openart.ai/workflows/home]
+- (comfyworkflows.com)[https://comfyworkflows.com/]
 
 ___
 
