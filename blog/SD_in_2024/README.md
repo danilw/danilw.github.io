@@ -167,7 +167,7 @@ You can find parameters [there](https://stable-diffusion-art.com/freeu/) or [the
 Other example for FreeU - [SDXL txt2img fine detail workflow](https://comfyworkflows.com/workflows/e6c1c436-f878-4cc3-be0a-43ee96864467)
 
 **Alternative to FreeU - SD1.5 can be used to add details to SDXL image.**\
-*Look in my workflow files* `XL-good/SDXL_sd1.5.json`
+*Look in my workflow files* [XL-good/SDXL_sd1.5.json](https://github.com/danilw/danilw.github.io/tree/master/blog/SD_in_2024/imgdat/wkf/XL-good)
 
 **Example of SDXL-SD1.5:**
 
