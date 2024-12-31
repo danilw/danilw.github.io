@@ -1,0 +1,770 @@
+{
+  "last_node_id": 35,
+  "last_link_id": 71,
+  "nodes": [
+    {
+      "id": 6,
+      "type": "PrimitiveNode",
+      "pos": [
+        450,
+        160
+      ],
+      "size": {
+        "0": 400,
+        "1": 80
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2
+          ],
+          "widget": {
+            "name": "text_l"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Style Prompt ",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "Anime, masterpiece, best quality, bokeh, "
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 7,
+      "type": "PrimitiveNode",
+      "pos": [
+        450,
+        280
+      ],
+      "size": {
+        "0": 390,
+        "1": 80
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3,
+            4
+          ],
+          "widget": {
+            "name": "text_g"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Main Negative",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "jpeg,blurry,embedding:unaestheticXLv31, "
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 16,
+      "type": "KSamplerAdvanced",
+      "pos": [
+        1579.7488883345168,
+        -151.89452017045434
+      ],
+      "size": {
+        "0": 305.49188232421875,
+        "1": 546
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 21
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 22
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 23
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 24,
+          "slot_index": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            43
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSamplerAdvanced"
+      },
+      "widgets_values": [
+        "enable",
+        815499072312588,
+        "randomize",
+        35,
+        7.5,
+        "dpmpp_2m",
+        "karras",
+        0,
+        10000,
+        "disable"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "CLIPTextEncodeSDXL",
+      "pos": [
+        870,
+        10
+      ],
+      "size": {
+        "0": 210,
+        "1": 218
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 14
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "text_g"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "text_l",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "text_l"
+          },
+          "slot_index": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            22
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeSDXL"
+      },
+      "widgets_values": [
+        4096,
+        4096,
+        0,
+        0,
+        1024,
+        1024,
+        "masterpiece, best quality, landscape, no humans, sadness,oil painting (medium) fake sky,(multiple fake stars falling from sky:1.2),floating star shape falling down,broken ground\n",
+        "Anime, masterpiece, best quality, bokeh, "
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 4,
+      "type": "CLIPTextEncodeSDXL",
+      "pos": [
+        860,
+        280
+      ],
+      "size": {
+        "0": 210,
+        "1": 218
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 15
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "text_g"
+          }
+        },
+        {
+          "name": "text_l",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "text_l"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            23
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncodeSDXL"
+      },
+      "widgets_values": [
+        4088,
+        4096,
+        0,
+        0,
+        1024,
+        1024,
+        "jpeg,blurry,embedding:unaestheticXLv31, ",
+        "jpeg,blurry,embedding:unaestheticXLv31, "
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 10,
+      "type": "SDXL Empty Latent Image",
+      "pos": [
+        -120,
+        140
+      ],
+      "size": {
+        "0": 473.24176025390625,
+        "1": 82
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            24
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Resolution",
+      "properties": {
+        "Node name for S&R": "SDXL Empty Latent Image"
+      },
+      "widgets_values": [
+        "1024 x 1024 (1.00)",
+        1
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 11,
+      "type": "GlobalSeed //Inspire",
+      "pos": [
+        -120,
+        0
+      ],
+      "size": {
+        "0": 477.6380310058594,
+        "1": 130
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "properties": {
+        "Node name for S&R": "GlobalSeed //Inspire"
+      },
+      "widgets_values": [
+        2638508132,
+        true,
+        "randomize",
+        1699583026
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 5,
+      "type": "PrimitiveNode",
+      "pos": [
+        445,
+        27
+      ],
+      "size": {
+        "0": 410,
+        "1": 100
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ],
+          "widget": {
+            "name": "text_g"
+          },
+          "slot_index": 0
+        }
+      ],
+      "title": "Main Prompt",
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "masterpiece, best quality, landscape, no humans, sadness,oil painting (medium) fake sky,(multiple fake stars falling from sky:1.2),floating star shape falling down,broken ground\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 15,
+      "type": "FreeU",
+      "pos": [
+        1238.3624068892045,
+        -153.85246304154813
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            21
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "FreeU - 2pass",
+      "properties": {
+        "Node name for S&R": "FreeU"
+      },
+      "widgets_values": [
+        1.1,
+        1.1500000000000001,
+        0.85,
+        0.35000000000000003
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 32,
+      "type": "SaveImage",
+      "pos": [
+        2166,
+        -211
+      ],
+      "size": {
+        "0": 603.9000244140625,
+        "1": 760.0999755859375
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 67
+        }
+      ],
+      "title": "Image\n",
+      "properties": {},
+      "widgets_values": [
+        "FreeU-SDXL_1"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 33,
+      "type": "Note",
+      "pos": [
+        1433,
+        -459
+      ],
+      "size": {
+        "0": 236.36363220214844,
+        "1": 205.4545440673828
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "b1. 1.10\nb2. 1.15\ns1. 0.85\ns2 0.35"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 18,
+      "type": "VAEDecode",
+      "pos": [
+        1901.7488883345168,
+        -143.8945201704543
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 43
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 70
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            67
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 34,
+      "type": "Reroute",
+      "pos": [
+        1268,
+        -302
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 71
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "VAE",
+          "links": [
+            70
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Reroute vae\n",
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      },
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 2,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        499,
+        -357
+      ],
+      "size": {
+        "0": 490.8305969238281,
+        "1": 98
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            20
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            14,
+            15
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "sdxl/animagine/animagineXLV31_v31.safetensors"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "VAELoader",
+      "pos": [
+        632,
+        -505
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            71
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "animagineXLV31_v31_vae.safetensors"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      5,
+      0,
+      3,
+      1,
+      "STRING"
+    ],
+    [
+      2,
+      6,
+      0,
+      3,
+      2,
+      "STRING"
+    ],
+    [
+      3,
+      7,
+      0,
+      4,
+      1,
+      "STRING"
+    ],
+    [
+      4,
+      7,
+      0,
+      4,
+      2,
+      "STRING"
+    ],
+    [
+      14,
+      2,
+      1,
+      3,
+      0,
+      "CLIP"
+    ],
+    [
+      15,
+      2,
+      1,
+      4,
+      0,
+      "CLIP"
+    ],
+    [
+      20,
+      2,
+      0,
+      15,
+      0,
+      "MODEL"
+    ],
+    [
+      21,
+      15,
+      0,
+      16,
+      0,
+      "MODEL"
+    ],
+    [
+      22,
+      3,
+      0,
+      16,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      23,
+      4,
+      0,
+      16,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      24,
+      10,
+      0,
+      16,
+      3,
+      "LATENT"
+    ],
+    [
+      43,
+      16,
+      0,
+      18,
+      0,
+      "LATENT"
+    ],
+    [
+      67,
+      18,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      70,
+      34,
+      0,
+      18,
+      1,
+      "VAE"
+    ],
+    [
+      71,
+      35,
+      0,
+      34,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "FreeU Settings",
+      "bounding": [
+        1239,
+        -243,
+        890,
+        472
+      ],
+      "color": "#3f789e",
+      "font_size": 24
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

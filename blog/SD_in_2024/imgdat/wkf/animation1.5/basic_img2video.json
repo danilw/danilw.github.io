@@ -1,0 +1,93 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "chaosaiart_Show_Info",
+      "pos": [
+        760,
+        290
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "info",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "info"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Show_Info"
+      },
+      "widgets_values": [
+        "",
+        "Video Size: 480x856\nFPS: 10\nOutput: /home/danil/ai_stuff/ComfyUI/output/video/chaosaiart_1.mp4"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "chaosaiart_img2video",
+      "pos": [
+        370,
+        290
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "merge_folders",
+          "type": "PATH",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Info",
+          "type": "STRING",
+          "links": [
+            2
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_img2video"
+      },
+      "widgets_values": [
+        "/home/danil/ai_stuff/ComfyUI/output/chaosaiart/v_0001",
+        "video",
+        10
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      3,
+      0,
+      2,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

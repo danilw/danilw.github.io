@@ -1,0 +1,1377 @@
+{
+  "last_node_id": 397,
+  "last_link_id": 911,
+  "nodes": [
+    {
+      "id": 203,
+      "type": "Reroute",
+      "pos": [
+        1310,
+        100
+      ],
+      "size": [
+        98.8,
+        26
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 801
+        }
+      ],
+      "outputs": [
+        {
+          "name": "RESTART",
+          "type": "RESTART",
+          "links": [
+            819
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 202,
+      "type": "Reroute",
+      "pos": [
+        850,
+        170
+      ],
+      "size": [
+        132.39999999999998,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 416
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ACTIV_FRAME",
+          "type": "ACTIV_FRAME",
+          "links": [
+            826,
+            829
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 367,
+      "type": "Reroute",
+      "pos": [
+        1710,
+        20
+      ],
+      "size": [
+        98.8,
+        26
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 819
+        }
+      ],
+      "outputs": [
+        {
+          "name": "RESTART",
+          "type": "RESTART",
+          "links": [
+            822,
+            866
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 370,
+      "type": "Reroute",
+      "pos": [
+        1110,
+        170
+      ],
+      "size": [
+        132.39999999999998,
+        26
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 829
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ACTIV_FRAME",
+          "type": "ACTIV_FRAME",
+          "links": [
+            830
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 357,
+      "type": "chaosaiart_SaveImage",
+      "pos": [
+        1690,
+        600
+      ],
+      "size": {
+        "0": 210,
+        "1": 290
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 907
+        },
+        {
+          "name": "restart",
+          "type": "RESTART",
+          "link": 823
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_SaveImage"
+      },
+      "widgets_values": [
+        "chaosaiart"
+      ]
+    },
+    {
+      "id": 383,
+      "type": "PreviewImage",
+      "pos": [
+        1690,
+        250
+      ],
+      "size": {
+        "0": 210,
+        "1": 250
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 877
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 361,
+      "type": "chaosaiart_Show_Info",
+      "pos": [
+        1280,
+        720
+      ],
+      "size": {
+        "0": 320,
+        "1": 150
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "info",
+          "type": "STRING",
+          "link": 909,
+          "widget": {
+            "name": "info"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Show_Info"
+      },
+      "widgets_values": [
+        "",
+        "Use Cache Image\nFrame: 360\nactiv_seed: 7180791620855\nFirst Image SEED: 9657889619531"
+      ]
+    },
+    {
+      "id": 382,
+      "type": "chaosaiart_forPreview",
+      "pos": [
+        1690,
+        130
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "restart",
+          "type": "RESTART",
+          "link": 866
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 905
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            877
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_forPreview"
+      },
+      "widgets_values": [
+        10
+      ]
+    },
+    {
+      "id": 3,
+      "type": "chaosaiart_Prompt_mixer_byFrame",
+      "pos": [
+        492,
+        269
+      ],
+      "size": {
+        "0": 330,
+        "1": 230
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "activ_frame",
+          "type": "ACTIV_FRAME",
+          "link": 9
+        },
+        {
+          "name": "main_prompt",
+          "type": "MAIN_PROMPT",
+          "link": 76
+        },
+        {
+          "name": "frame_prompt_1",
+          "type": "FRAME_PROMPT",
+          "link": 861
+        },
+        {
+          "name": "frame_prompt_2",
+          "type": "FRAME_PROMPT",
+          "link": 78
+        },
+        {
+          "name": "frame_prompt_3",
+          "type": "FRAME_PROMPT",
+          "link": 881
+        },
+        {
+          "name": "frame_prompt_4",
+          "type": "FRAME_PROMPT",
+          "link": 880
+        },
+        {
+          "name": "frame_prompt_5",
+          "type": "FRAME_PROMPT",
+          "link": null
+        },
+        {
+          "name": "frame_prompt_6",
+          "type": "FRAME_PROMPT",
+          "link": null
+        },
+        {
+          "name": "frame_prompt_7",
+          "type": "FRAME_PROMPT",
+          "link": null
+        },
+        {
+          "name": "frame_prompt_8",
+          "type": "FRAME_PROMPT",
+          "link": null
+        },
+        {
+          "name": "frame_prompt_9",
+          "type": "FRAME_PROMPT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Info",
+          "type": "STRING",
+          "links": [
+            16
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "FRAME_PROMPT",
+          "type": "FRAME_PROMPT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "LORA",
+          "type": "LORA",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "POSITIV_TXT",
+          "type": "STRING",
+          "links": [
+            2
+          ],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "NEGAITV_TXT",
+          "type": "STRING",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Prompt_mixer_byFrame"
+      }
+    },
+    {
+      "id": 7,
+      "type": "Reroute",
+      "pos": [
+        419,
+        72
+      ],
+      "size": [
+        132.39999999999998,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 826
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ACTIV_FRAME",
+          "type": "ACTIV_FRAME",
+          "links": [
+            9
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 11,
+      "type": "chaosaiart_Show_Info",
+      "pos": [
+        481,
+        581
+      ],
+      "size": {
+        "0": 330,
+        "1": 200
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "info",
+          "type": "STRING",
+          "link": 16,
+          "widget": {
+            "name": "info"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Show_Info"
+      },
+      "widgets_values": [
+        "Frame: 2,\nPositiv: masterpiece, best quality, highres,1 girl,\nNegativ: nfsw, (worst quality:1.2), low quality, medium quality, deleted, lowres, comic, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, jpeg artifacts, signature, watermark, username, nude,\nLora:",
+        "Frame: 360,\nPositiv: photorealistic lighting, object with shape of, 8k, 4k, best quality, highres,crystal, purple colors,\nNegativ: nfsw, nude,  (worst quality:1.2), low quality, medium quality, deleted, lowres, comic, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, jpeg artifacts, signature, watermark, username,\nLora:"
+      ]
+    },
+    {
+      "id": 368,
+      "type": "Reroute",
+      "pos": [
+        1703,
+        535
+      ],
+      "size": [
+        98.8,
+        26
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 822
+        }
+      ],
+      "outputs": [
+        {
+          "name": "RESTART",
+          "type": "RESTART",
+          "links": [
+            823
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 2,
+      "type": "chaosaiart_Prompt",
+      "pos": [
+        -630.8697040457182,
+        -141.24400811564374
+      ],
+      "size": {
+        "0": 803.8004150390625,
+        "1": 327.7334899902344
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "add_lora",
+          "type": "LORA",
+          "link": null
+        },
+        {
+          "name": "add_positiv",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_positiv"
+          }
+        },
+        {
+          "name": "add_negativ",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_negativ"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MAIN_PROMPT",
+          "type": "MAIN_PROMPT",
+          "links": [
+            76
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "LORA",
+          "type": "LORA",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "POSITIV_TXT",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "NEGATIV_TXT",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Prompt"
+      },
+      "widgets_values": [
+        "photorealistic lighting, object with shape of, 8k, 4k, best quality, highres",
+        "nfsw, nude,  (worst quality:1.2), low quality, medium quality, deleted, lowres, comic, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, jpeg artifacts, signature, watermark, username,",
+        "masterpiece, best quality, highres",
+        "nfsw, (worst quality:1.2), low quality, medium quality, deleted, lowres, comic, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, jpeg artifacts, signature, watermark, username, nude,"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "chaosaiart_Prompt_Frame",
+      "pos": [
+        -635.5947241115762,
+        234.11429437343222
+      ],
+      "size": {
+        "0": 514.8179321289062,
+        "1": 353.975341796875
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "add_lora",
+          "type": "LORA",
+          "link": null
+        },
+        {
+          "name": "add_positiv",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_positiv"
+          }
+        },
+        {
+          "name": "add_negativ",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_negativ"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FRAME_PROMPT",
+          "type": "FRAME_PROMPT",
+          "links": [
+            861
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Prompt_Frame"
+      },
+      "widgets_values": [
+        1,
+        "square, blue colors",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 5,
+      "type": "chaosaiart_Prompt_Frame",
+      "pos": [
+        -104.59472411157596,
+        252.1142943734322
+      ],
+      "size": {
+        "0": 488.5527038574219,
+        "1": 335.975341796875
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "add_lora",
+          "type": "LORA",
+          "link": null
+        },
+        {
+          "name": "add_positiv",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_positiv"
+          }
+        },
+        {
+          "name": "add_negativ",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_negativ"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FRAME_PROMPT",
+          "type": "FRAME_PROMPT",
+          "links": [
+            78
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Prompt_Frame"
+      },
+      "widgets_values": [
+        72,
+        "circle, red colors",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 195,
+      "type": "chaosaiart_Prompt_Frame",
+      "pos": [
+        -626.5947241115762,
+        626.1142943734328
+      ],
+      "size": {
+        "0": 523.0284423828125,
+        "1": 350.3421630859375
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "add_lora",
+          "type": "LORA",
+          "link": null
+        },
+        {
+          "name": "add_positiv",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_positiv"
+          }
+        },
+        {
+          "name": "add_negativ",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_negativ"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FRAME_PROMPT",
+          "type": "FRAME_PROMPT",
+          "links": [
+            881
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Prompt_Frame"
+      },
+      "widgets_values": [
+        192,
+        "triangle, green colors",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 1,
+      "type": "chaosaiart_CheckpointPrompt",
+      "pos": [
+        910,
+        300
+      ],
+      "size": {
+        "0": 316,
+        "1": 118
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "lora",
+          "type": "LORA",
+          "link": 1
+        },
+        {
+          "name": "positiv_txt",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "positiv_txt"
+          }
+        },
+        {
+          "name": "negativ_txt",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "negativ_txt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            900
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "POSITIV",
+          "type": "CONDITIONING",
+          "links": [
+            901
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "NEGATIV",
+          "type": "CONDITIONING",
+          "links": [
+            902
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            911
+          ],
+          "shape": 3,
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_CheckpointPrompt"
+      },
+      "widgets_values": [
+        "revAnimated_v2Rebirth.safetensors",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 6,
+      "type": "chaosaiart_restarter",
+      "pos": [
+        875,
+        73
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ACTIV_FRAME",
+          "type": "ACTIV_FRAME",
+          "links": [
+            416
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "RESTART",
+          "type": "RESTART",
+          "links": [
+            801
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "Info",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_restarter"
+      },
+      "widgets_values": [
+        3
+      ]
+    },
+    {
+      "id": 369,
+      "type": "Reroute",
+      "pos": [
+        1269,
+        202
+      ],
+      "size": [
+        132.39999999999998,
+        26
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 830
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ACTIV_FRAME",
+          "type": "ACTIV_FRAME",
+          "links": [
+            904
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 389,
+      "type": "Note",
+      "pos": [
+        850,
+        -130
+      ],
+      "size": {
+        "0": 360,
+        "1": 160
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Create 360 Image by this Workflow.\n\nUse \"Batch count\" ( \"Extra Options\" Checkbox : on, under Queue Prompt )\n\nIf you use the \n\"🔶Restart & Activ Frame - Advanced\", then you can restart form every frame you want, \nby using last Img -> Img2img and new version. \nJust delete failed frame and use \"🔶Merge_Folder\".\n\nThen \"🔶Convert img2video\" to create a video."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 394,
+      "type": "chaosaiart_KSampler_a2",
+      "pos": [
+        1280,
+        280
+      ],
+      "size": {
+        "0": 315,
+        "1": 398
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "activ_frame",
+          "type": "ACTIV_FRAME",
+          "link": 904
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 900
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 901
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 902
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 911
+        },
+        {
+          "name": "zoom_frame",
+          "type": "ZOOM_FRAME",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Info",
+          "type": "STRING",
+          "links": [
+            909
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            905,
+            907
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "SAMPLER",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_KSampler_a2"
+      },
+      "widgets_values": [
+        "Portrait (Smartphone) / 9:16",
+        "480p",
+        -1,
+        "fixed: denoise=denise || denoise=1",
+        0.5,
+        -1,
+        16,
+        0.63,
+        12,
+        "dpmpp_2m",
+        "karras"
+      ]
+    },
+    {
+      "id": 192,
+      "type": "chaosaiart_Prompt_Frame",
+      "pos": [
+        -76.59472411157596,
+        625.1142943734328
+      ],
+      "size": {
+        "0": 461.5527038574219,
+        "1": 354.15277099609375
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "add_lora",
+          "type": "LORA",
+          "link": null
+        },
+        {
+          "name": "add_positiv",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_positiv"
+          }
+        },
+        {
+          "name": "add_negativ",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "add_negativ"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FRAME_PROMPT",
+          "type": "FRAME_PROMPT",
+          "links": [
+            880
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "chaosaiart_Prompt_Frame"
+      },
+      "widgets_values": [
+        312,
+        "crystal, purple colors",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 397,
+      "type": "Note",
+      "pos": [
+        217,
+        -237
+      ],
+      "size": [
+        368.38710205078155,
+        298.6344133300782
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "in Ksampler:\nChange denoise to have more or less variation:\nclose to 0.5 is less\nclose to 0.7 is more\n\n\nNodes - https://github.com/chaosaiart/Chaosaiart-Nodes\n\nModel - https://civitai.com/models/7371?modelVersionId=425083\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      2,
+      1,
+      0,
+      "LORA"
+    ],
+    [
+      2,
+      3,
+      3,
+      1,
+      1,
+      "STRING"
+    ],
+    [
+      3,
+      3,
+      4,
+      1,
+      2,
+      "STRING"
+    ],
+    [
+      9,
+      7,
+      0,
+      3,
+      0,
+      "ACTIV_FRAME"
+    ],
+    [
+      16,
+      3,
+      0,
+      11,
+      0,
+      "STRING"
+    ],
+    [
+      76,
+      2,
+      0,
+      3,
+      1,
+      "MAIN_PROMPT"
+    ],
+    [
+      78,
+      5,
+      0,
+      3,
+      3,
+      "FRAME_PROMPT"
+    ],
+    [
+      416,
+      6,
+      0,
+      202,
+      0,
+      "*"
+    ],
+    [
+      801,
+      6,
+      1,
+      203,
+      0,
+      "*"
+    ],
+    [
+      819,
+      203,
+      0,
+      367,
+      0,
+      "*"
+    ],
+    [
+      822,
+      367,
+      0,
+      368,
+      0,
+      "*"
+    ],
+    [
+      823,
+      368,
+      0,
+      357,
+      1,
+      "RESTART"
+    ],
+    [
+      826,
+      202,
+      0,
+      7,
+      0,
+      "*"
+    ],
+    [
+      829,
+      202,
+      0,
+      370,
+      0,
+      "*"
+    ],
+    [
+      830,
+      370,
+      0,
+      369,
+      0,
+      "*"
+    ],
+    [
+      861,
+      4,
+      0,
+      3,
+      2,
+      "FRAME_PROMPT"
+    ],
+    [
+      866,
+      367,
+      0,
+      382,
+      0,
+      "RESTART"
+    ],
+    [
+      877,
+      382,
+      0,
+      383,
+      0,
+      "IMAGE"
+    ],
+    [
+      880,
+      192,
+      0,
+      3,
+      5,
+      "FRAME_PROMPT"
+    ],
+    [
+      881,
+      195,
+      0,
+      3,
+      4,
+      "FRAME_PROMPT"
+    ],
+    [
+      900,
+      1,
+      0,
+      394,
+      1,
+      "MODEL"
+    ],
+    [
+      901,
+      1,
+      1,
+      394,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      902,
+      1,
+      2,
+      394,
+      3,
+      "CONDITIONING"
+    ],
+    [
+      904,
+      369,
+      0,
+      394,
+      0,
+      "ACTIV_FRAME"
+    ],
+    [
+      905,
+      394,
+      1,
+      382,
+      1,
+      "IMAGE"
+    ],
+    [
+      907,
+      394,
+      1,
+      357,
+      0,
+      "IMAGE"
+    ],
+    [
+      909,
+      394,
+      0,
+      361,
+      0,
+      "STRING"
+    ],
+    [
+      911,
+      1,
+      3,
+      394,
+      4,
+      "VAE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Checkpoint",
+      "bounding": [
+        874,
+        219,
+        366,
+        228
+      ],
+      "color": "#3f789e",
+      "font_size": 24
+    },
+    {
+      "title": "Prompting",
+      "bounding": [
+        -644,
+        -216,
+        1205,
+        1219
+      ],
+      "color": "#3f789e",
+      "font_size": 24
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
