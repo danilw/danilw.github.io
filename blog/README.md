@@ -20,6 +20,7 @@ Small/simple:
 - [Simple 2D SDF tutorial](simple_SDF_tutorial/README.md)
 - [Cubemap GLSL shader debug functions](Cubemap_GLSL_shader_debug_functions/README.md)
 - [Position of object on image without AI/ML - Jump flooding algorithm](Position_of_object_on_image_without_AI_ML_Jump_flooding_algorithm/README.md)
+- [Stable Diffusion - ComfyUI in 2024](SD_in_2024/README.md)
 
 ___
 
