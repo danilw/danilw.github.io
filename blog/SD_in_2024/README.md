@@ -307,7 +307,7 @@ ___
 - `1.5_animdiff_LOOP_bw_LOGO.json` - AnimateDiff_00033.mp4 made with it and AnimateDiff_00035.mp4
 - `1.5_animdiff_LOOP_single_text_WATER.json` - WaterDiff generated with it (logo) - notice how much different quality compare to just animdiff mode - this need its own model to have this good result. Original was deleted but closest to it linked in *Text/Logo Animation* section above.
 - `1.5-simple-animatediff.json` - aaa_readme_00003.mp4 - simplest workflow
-- animatelcm-motion-brush.json` - final_00002.mp4 water motion brush. Oriignal was deleted, closes to it [Motion Brush1](https://openart.ai/workflows/mayfly_expensive_61/motion-brush-replica-using-grounding-dino/ed6YDEeDbSpX8D9Q0wwl) [motion brush2](https://openart.ai/workflows/sparrow_circular_79/stable-dynamic-wallpapermotion-brushv2/2KRklDVxFZtpOrRdaIp7)
+- animatelcm-motion-brush.json` - final_00002.mp4 water motion brush. Oriignal was deleted, closest to it [Motion Brush1](https://openart.ai/workflows/mayfly_expensive_61/motion-brush-replica-using-grounding-dino/ed6YDEeDbSpX8D9Q0wwl) [motion brush2](https://openart.ai/workflows/sparrow_circular_79/stable-dynamic-wallpapermotion-brushv2/2KRklDVxFZtpOrRdaIp7)
 
 **XL-good** - for image use FreeU - much much better quality than default SDXL.\
 *vid* - is unusable, just left there as examples - waiting 30 mins for single few sec video is no go.
