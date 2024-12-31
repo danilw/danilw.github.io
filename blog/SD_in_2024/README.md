@@ -29,9 +29,9 @@ Basic ComfyUI workflow-examples is on ComfyUI github page.
 
 **Biggest portals to search ComfyUI-workflow and models/lora/etc is:**
 
-- (civitai.com)[https://civitai.com]
-- (openart.ai/workflows)[https://openart.ai/workflows/home]
-- (comfyworkflows.com)[https://comfyworkflows.com/]
+- [civitai.com](https://civitai.com)
+- [openart.ai/workflows](https://openart.ai/workflows/home)
+- [comfyworkflows.com](https://comfyworkflows.com/)
 
 ___
 
