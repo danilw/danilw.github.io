@@ -17,7 +17,7 @@ ___
 Something like this - [worlds-panorama-v1.ipynb](imgdat/worlds-panorama-v1.ipynb) - it produce inpainted panorama image.\
 Example result of this script:
 
-<div><video controls src="0.mp4" muted="false"></video></div>
+[SD panorama demo video](https://danilw.github.io/blog/SD_in_2024/imgdat/0.mp4)
 
 ___
 
@@ -89,8 +89,8 @@ You can try using [llama2 llama.cpp server](https://github.com/ggerganov/llama.c
 
 <details>
   <summary>personality from openwebui (copy to llama server web page personality options field)</summary>
-<pre>
-  <code>
+
+```
   
 Here is a guide to make prompts for a generative ai stable diffusion models text to image. 
 Only reply with only the prompt you are asked to create.
@@ -129,10 +129,7 @@ You can also specify the type of camera, lens, and model that the AI should imit
 - Experiment with different parameters and their values to get the desired output.
 - Use the `--no` parameter effectively to exclude certain elements from your image
 
-  </code>
-</pre>
-
-
+```
 
 </details>
 
@@ -176,8 +173,6 @@ Other example for FreeU - [SDXL txt2img fine detail workflow](https://comfyworkf
 
 ![xl-1.5-xl](imgdat/xl-1.5-xl_o.jpg)
 
-
-
 ___
 
 # 360 panorama and TiledKSampler: (bad)
@@ -203,11 +198,10 @@ Required *fooocus_inpaint* models can be found on https://github.com/Acly/comfyu
 *Seam - sometime is visible 1-2 pixels, but "tiling" is not broken, so can be fixed latter.*\
 **It is just "panorama" - bot/top is notfixed.**
 
-Examples:
+Examples:\
+[panorama1.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/panorama1.mp4) [panorama2.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/panorama2.mp4) [panorama3.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/panorama3.mp4)
 
-<div><video controls src="imgdat/panorama1.webm" muted="false"></video></div>
-<div><video controls src="imgdat/panorama2.webm" muted="false"></video></div>
-<div><video controls src="imgdat/panorama3.webm" muted="false"></video></div>
+https://github.com/user-attachments/assets/9a738feb-24df-4e9e-80c6-26525213eb47
 
 ___
 
@@ -227,12 +221,10 @@ And very light VRAM/RAM system usage.
 - **Chaosaiart-Nodes** - https://github.com/chaosaiart/Chaosaiart-Nodes - read instructions there it simple to setup. (to convert images to video - use img2video node)
 - look below for my working workflows
 
-My examples chaosaiart:
+My examples chaosaiart:\
+[chaosaiart.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/chaosaiart.mp4) [chaosaiart_1.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/chaosaiart_1.mp4) [chaosaiart_2.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/chaosaiart_2.mp4) [chaosaiart_3.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/chaosaiart_3.mp4)
 
-<div><video controls src="imgdat/chaosaiart.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/chaosaiart_1.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/chaosaiart_2.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/chaosaiart_3.mp4" muted="false"></video></div>
+https://github.com/user-attachments/assets/09b03503-c150-4be3-a072-a1d287bbb0f3
 
 *below is SDXL*
 
@@ -268,13 +260,13 @@ Notice when installing custom nodes - you need model to `ComfyUI/custom_nodes/Co
 
 More examples of Animatediff look - https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved
 
-**Result of this from 8GB GPU:**
+**Result of this from 8GB GPU:**\
+[AnimateDiff_00010.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00010.mp4) [AnimateDiff_00017.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00017.mp4)
+[AnimateDiff_00019.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00019.mp4) [AnimateDiff_00032.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00032.mp4) [AnimateDiffturbovision_00007.webm](https://danilw.github.io/blog/SD_in_2024/imgdat/aaa_readme_00003.mp4) [AnimateDiffturbovision_00007.webm](https://danilw.github.io/blog/SD_in_2024/imgdat/aaa_readme_00003.mp4)
 
-<div><video controls src="imgdat/AnimateDiff_00010.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/AnimateDiff_00017.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/AnimateDiff_00019.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/AnimateDiff_00032.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/AnimateDiffturbovision_00007.webm" muted="false"></video></div>
+https://github.com/user-attachments/assets/0b63681d-4e4e-457f-bf89-27479d6f5727
+
+https://github.com/user-attachments/assets/eaee28dd-bd49-42dc-b7b4-480f2671e55b
 
 ___
 
@@ -290,15 +282,15 @@ ___
 
 *Note - it is very important to have correct model to work with mask.*
 
-Examples of generated from using mask: (linked below)
+**Examples of generated from using mask**: (linked below)
 
-<div><video controls src="imgdat/AnimateDiff_00033.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/AnimateDiff_00035.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/final_00002.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/WaterDiff_00001.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/WaterDiff_00005.mp4" muted="false"></video></div>
-<div><video controls src="imgdat/WaterDiff_00006.mp4" muted="false"></video></div>
+[AnimateDiff_00033.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00033.mp4) [AnimateDiff_00035.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/AnimateDiff_00035.mp4) [final_00002.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/final_00002.mp4) [WaterDiff_00001.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/WaterDiff_00001.mp4) [WaterDiff_00005.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/WaterDiff_00005.mp4) [WaterDiff_00006.mp4](https://danilw.github.io/blog/SD_in_2024/imgdat/WaterDiff_00006.mp4)
 
+https://github.com/user-attachments/assets/89e06c51-9a5b-48df-9745-3e1d5e645656
+
+https://github.com/user-attachments/assets/37521bf5-64dd-4c08-b897-06b61d0e281e
+
+https://github.com/user-attachments/assets/277aa7a0-2de9-4964-8f2e-98f998792c9c
 
 ___
 
@@ -306,7 +298,7 @@ ___
 
 *There may be some minimal changes compare to original source, or my-rehost because source deleted.*
 
-**Look - <link>**
+**Look - [imgdat/wkf](https://github.com/danilw/danilw.github.io/tree/master/blog/SD_in_2024/imgdat/wkf)**
 
 **animation1.5** - basic chaosaiart, *`Animation_txt2video_24fps_360.json` is 24fps 360 frames, default chaosaiart include 10fps but it easy to edit, `basic_img2video.json` use to convert images to video*.
 
@@ -323,7 +315,7 @@ ___
 **Input used as mask for Logo and Water mask:**\
 *(`animatelcm-motion-brush.json` and logo above)*
 
-**Look inp folder <LINK>**
+**Look in folder [imgdat/inp](https://github.com/danilw/danilw.github.io/tree/master/blog/SD_in_2024/imgdat/inp)**
 
 *Models* - you can find most of them just by name and most of them in related workflow links I posted here.\
 For example `AnimeteLCM_sd15_t2v` can be found [there](https://comfyworkflows.com/workflows/f4ef4c26-bbd3-4630-b5fd-f3515071a94f) (and it linked above in animateLCM section).\
