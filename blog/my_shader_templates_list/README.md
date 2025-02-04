@@ -19,10 +19,10 @@ ___
 | Screenshot | link |
 |-------------|------------|
 | --- | --- |
-| Useful | --- |
+| **Useful** | --- |
 | <img src="img/sltyR2.jpg" width="650" height="auto" /> | [TEMPLATE 3d intersection](https://www.shadertoy.com/view/sltyR2) |
 | <img src="img/DljGzy.jpg" width="650" height="auto" /> | [TEMPLATE 3d sdf raymarch](https://www.shadertoy.com/view/DljGzy) |
-| <img src="img/dldGWj.jpg" width="650" height="auto" /> | [TEMPLATE 3d pathtracer TAA](https://www.shadertoy.com/view/dldGWj) |
+| <img src="img/dldGWj.jpg" width="650" height="auto" /> | [TEMPLATE 3d pathtracer TAA](https://www.shadertoy.com/view/dldGWj) </br>  Example use of this pathtracer template: </br> <ul><li>[Pathtraced voxel city](https://www.shadertoy.com/view/Ntcyz7)</li> <li>[Moving around scene with TAA](https://www.shadertoy.com/view/DdSBDy)</li> <li>[Moving forward scene with TAA](https://www.shadertoy.com/view/lfXGWX)</li> <li>[Spheres with pathtracing](https://www.shadertoy.com/view/MXsyWB)</li> <li>[Spheres 2 with pathtracing](https://www.shadertoy.com/view/l3ffzH)</li> </ul> |
 | <img src="img/fsyBRW.jpg" width="650" height="auto" /> | [TEMPLATE 3d pathtracer NO TAA](https://www.shadertoy.com/view/fsyBRW) - less complex to use in Shadertoy |
 | <img src="img/NttGWr.jpg" width="650" height="auto" /> | [TEMPLATE cubemap tools](https://www.shadertoy.com/view/NttGWr) - extremely useful. Panorama/cubemap uv mapping from-to-from all directions.|
 | <img src="img/DsffW8.jpg" width="650" height="auto" /> | [TEMPLATE PRINT text uint float](https://www.shadertoy.com/view/DsffW8) |
@@ -32,7 +32,7 @@ ___
 | <img src="img/tltBzM.jpg" width="650" height="auto" /> | [TEMPLATE tile rendering example](https://www.shadertoy.com/view/tltBzM) - minimal example of tile rendering for Shadertoy, for heavy shaders. |
 | <img src="img/7ldXzf.jpg" width="650" height="auto" /> | [TEMPLATE 64x64 tile render](https://www.shadertoy.com/view/7ldXzf) - more complex tile rendering. |
 | --- | --- |
-| less often used | --- |
+| **less often used** | --- |
 | <img src="img/tllfDM.jpg" width="650" height="auto" /> | [Debug heatmap script](https://www.shadertoy.com/view/tllfDM) - not very very useful/helpful, but can be used to "see" what function called the most in shaders. |
 | <img src="img/sljyRy.jpg" width="650" height="auto" /> | [TEMPLATE TAA filter antialiasing](https://www.shadertoy.com/view/sljyRy) - notice link to TAA-for geometry edges in shader description. *Example use of TAA for geometry for shadertoy shaders* - [*[TAA] Orbital Megastructure*](https://www.shadertoy.com/view/X33BRn) |
 | <img src="img/WlcBWr.jpg" width="650" height="auto" /> | [TEMPLATE DEBUG](https://www.shadertoy.com/view/WlcBWr) - for debug/compare Shadertoy behavior outside of Shadertoy. |
@@ -42,11 +42,11 @@ ___
 | <img src="img/wdS3D3.jpg" width="650" height="auto" /> | [mini game engine](https://www.shadertoy.com/view/wdS3D3) |
 | <img src="img/XljSRK.jpg" width="650" height="auto" /> | [Transparent background for Shadertoy shader](https://www.shadertoy.com/view/XljSRK) |
 | --- | --- |
-| Noise note | --- |
+| **Noise note** | --- |
 | <img src="img/7syfRd.jpg" width="650" height="auto" /> | [distribut value noise, histogram](https://www.shadertoy.com/view/7syfRd) |
 | <img src="img/NdGfRd.jpg" width="650" height="auto" /> | [TEST noise hash repetition](https://www.shadertoy.com/view/NdGfRd) |
 | --- | --- |
-| Const data note | --- |
+| **Const data note** | --- |
 | <img src="img/dd23Dc.jpg" width="650" height="auto" /> | [Optimized ML/Neural shader](https://www.shadertoy.com/view/dd23Dc) - remember about const data size in shader. |
 
 
