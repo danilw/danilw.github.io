@@ -1,7 +1,7 @@
 
 
 Context - use Stable Diffusion in 2024 *(~summer2024)*, with some examples.\
-System with (Nvidia) 4060 8GB GPU 16GB RAM and 32GB.
+System with (Nvidia) 4060 8GB GPU 16GB RAM and 32GB swap.
 
 **Mostly notes to myself if I ever need it latter.**
 
