@@ -20,8 +20,8 @@ ___
 |-------------|------------|
 | --- | --- |
 | **Useful** | --- |
-| <img src="img/sltyR2.jpg" width="650" height="auto" /> | [TEMPLATE 3d intersection](https://www.shadertoy.com/view/sltyR2) |
-| <img src="img/DljGzy.jpg" width="650" height="auto" /> | [TEMPLATE 3d sdf raymarch](https://www.shadertoy.com/view/DljGzy) |
+| <img src="img/sltyR2.jpg" width="650" height="auto" /> | [TEMPLATE 3d intersection](https://www.shadertoy.com/view/sltyR2) <br> Alternative -  [Simple CSG](https://www.shadertoy.com/view/Nl3yDN) or from [iq articles intersectors](https://iquilezles.org/articles/intersectors/). |
+| <img src="img/DljGzy.jpg" width="650" height="auto" /> | [TEMPLATE 3d sdf raymarch](https://www.shadertoy.com/view/DljGzy) <br> Alternative - [iq sdf template](https://www.shadertoy.com/view/Xds3zN). |
 | <img src="img/dldGWj.jpg" width="650" height="auto" /> | [TEMPLATE 3d pathtracer TAA](https://www.shadertoy.com/view/dldGWj) </br>  Example use of this pathtracer template: </br> <ul><li>[Pathtraced voxel city](https://www.shadertoy.com/view/Ntcyz7)</li> <li>[Moving around scene with TAA](https://www.shadertoy.com/view/DdSBDy)</li> <li>[Moving forward scene with TAA](https://www.shadertoy.com/view/lfXGWX)</li> <li>[Spheres with pathtracing](https://www.shadertoy.com/view/MXsyWB)</li> <li>[Spheres 2 with pathtracing](https://www.shadertoy.com/view/l3ffzH)</li> </ul> |
 | <img src="img/fsyBRW.jpg" width="650" height="auto" /> | [TEMPLATE 3d pathtracer NO TAA](https://www.shadertoy.com/view/fsyBRW) - less complex to use in Shadertoy |
 | <img src="img/NttGWr.jpg" width="650" height="auto" /> | [TEMPLATE cubemap tools](https://www.shadertoy.com/view/NttGWr) - extremely useful. Panorama/cubemap uv mapping from-to-from all directions.|
@@ -34,7 +34,7 @@ ___
 | --- | --- |
 | **less often used** | --- |
 | <img src="img/tllfDM.jpg" width="650" height="auto" /> | [Debug heatmap script](https://www.shadertoy.com/view/tllfDM) - not very very useful/helpful, but can be used to "see" what function called the most in shaders. |
-| <img src="img/sljyRy.jpg" width="650" height="auto" /> | [TEMPLATE TAA filter antialiasing](https://www.shadertoy.com/view/sljyRy) - notice link to TAA-for geometry edges in shader description. *Example use of TAA for geometry for shadertoy shaders* - [*[TAA] Orbital Megastructure*](https://www.shadertoy.com/view/X33BRn) |
+| <img src="img/sljyRy.jpg" width="650" height="auto" /> | [TEMPLATE TAA filter antialiasing](https://www.shadertoy.com/view/sljyRy) - notice link to TAA-for geometry edges in shader description. <br> *Example use of TAA for geometry for shadertoy shaders* - [*[TAA] Orbital Megastructure*](https://www.shadertoy.com/view/X33BRn) |
 | <img src="img/WlcBWr.jpg" width="650" height="auto" /> | [TEMPLATE DEBUG](https://www.shadertoy.com/view/WlcBWr) - for debug/compare Shadertoy behavior outside of Shadertoy. |
 | <img src="img/ttjSD1.jpg" width="650" height="auto" /> | [TEMPLATE color palette](https://www.shadertoy.com/view/ttjSD1) |
 | <img src="img/wdBXRt.jpg" width="650" height="auto" /> | [disk/square mapping](https://www.shadertoy.com/view/wdBXRt) |
