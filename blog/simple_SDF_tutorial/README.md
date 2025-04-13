@@ -2,22 +2,25 @@
 
 # Simple 2D SDF tutorial
 
-### Better tutorial, or watch first - [Inigo Quilez The basics of Painting with Maths (youtube video)](https://youtu.be/0ifChJ0nJfM)
-
-This my tutorial shows how to use 2D SDF shape to create some basic effect.
+This my tutorial shows how to use 2D SDF shape to create some basic effect.\
+*(Notice links to many useful resources)*
 
 ___
 
 ![](https://www.ronja-tutorials.com/assets/images/posts/035/Result.gif)
 
-### Read this link first if you do not know what SDF is - [link to blog on ronja-tutorials.com](https://www.ronja-tutorials.com/post/035-2d-sdf-combination/#simple-combinations)
+## Read this first if you do not know what SDF is - [link to blog on ronja-tutorials.com](https://www.ronja-tutorials.com/post/035-2d-sdf-combination/#simple-combinations)
 
 Look there for *Simple Combinations* such as - merge, intersect, subtract, and others.
 
 Down below I use **merge operation**, that literally just `min(shape1, shape2);` so I use directly `min`.
 
-[2D distance functions](https://iquilezles.org/articles/distfunctions2d/) - this page has list of **more basic SDF shapes**, I use just Circle.\
-If you need repetition of same shape - [hg_sdf](http://mercury.sexy/hg_sdf/). Or/and [distance functions](https://iquilezles.org/articles/distfunctions/) - search `opSmoothUnion` - there.
+Useful inks:
+
+- [2D distance functions](https://iquilezles.org/articles/distfunctions2d/) - this page has list of **more basic SDF shapes**, I use just Circle.
+- [**hg_sdf**](http://mercury.sexy/hg_sdf/) - repetition `pMod` and generalized combinations `fOp` - work for 2d and 3d same.
+- Or/and [distance functions](https://iquilezles.org/articles/distfunctions/) - search `opSmoothUnion` - there.
+- *3d sdf shapes [3D distance functions](https://iquilezles.org/articles/distfunctions/).*
 
 ### And notice - [Inigo Quilez smooth minimum Article](https://iquilezles.org/articles/smin/) - extremely useful
 ___
