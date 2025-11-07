@@ -13,6 +13,17 @@ Go to [nvidia-vaapi-driver](https://github.com/elFarto/nvidia-vaapi-driver) - bu
 
 ___
 
+## Update Novemnber 2025 - to context with "force P2 state":
+
+[Nvidia driver: 580.105.08](https://www.nvidia.com/en-us/drivers/details/257493/) 
+
+> Added a new environment variable, CUDA_DISABLE_PERF_BOOST, to allow for disabling the default behavior of boosting the GPU to a higher power state when running CUDA applications. Setting this environment variable to '1' will disable the boost. 
+
+*For more details read [this comment](https://github.com/NVIDIA/open-gpu-kernel-modules/issues/333#issuecomment-3499129176).*
+
+___
+
+
 ## Short insrtuction to `nvidia-vaapi-driver`:
 
 1. `git clone https://github.com/elFarto/nvidia-vaapi-driver`
@@ -84,7 +95,14 @@ ___
 
 ## Conclusion:
 
-Use of Nvidia video-decoding hardware acceleration in Linux webbrowser is not worth it.\
+**Update 2025** - since 580.105.08 there `CUDA_DISABLE_PERF_BOOST` to turn off force-behavior - **notice Update 2025 note at top.**\
+**Since now - it worth it**.
+
+*Below is only for old drivers.*
+
+___
+
+Use of Nvidia video-decoding hardware acceleration in Linux webbrowser is ~not worth it~.\
 For reason - Nvidia force GPU-clocks/performance to P2.
 
 For desktop-video players - like mpv - **maybe for 4k videos it worth it**.\
